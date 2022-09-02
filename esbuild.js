@@ -59,7 +59,9 @@ prepare().then(() => {
 
 			}),
 			eslintPlugin(),
-			copy({ from: './src/assets/img/metis.svg', to: '../metis.svg' }),
+			copy([
+				{ from: './src/assets/img/', to: '../assets/img' },
+			]),
 			html({ in: 'src/index.html', out: 'dist/index.html', dev: DEV }),
 		]
 
