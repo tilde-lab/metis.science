@@ -11,15 +11,16 @@ body,
 	margin: 0;
 }
 
-div.distant_msg {
-	margin: 5vh auto !important;
+/* SLIDY fix */
+.slidy {
+	display: grid !important;
 }
 
-.modal .modal-body {
-	overflow-y: visible !important;
+.slidy-thumbnails {
+	display: flex !important;
 }
 
-.menu {
-	max-height: 300px !important;
-	overflow-x: auto !important;
+.slidy-slides,
+.slidy-slide {
+	margin: 0 !important;
 }

@@ -1,4 +1,4 @@
-<section>
+<section class="image-gallery">
 	<Grid stack>
 		{#each images as image, i}
 			<Col col="4">
@@ -26,14 +26,14 @@
 </script>
 
 <style lang="scss">
-	section {
+	.image-gallery {
 		max-width: 500px;
 		margin: auto;
 		padding-top: 3rem;
-	}
-	:global(section button) {
-		width: 150px;
-		height: 150px !important;
+		:global(button) {
+			width: 150px;
+			height: 150px !important;
+		}
 		img {
 			max-width: 100%;
 		}

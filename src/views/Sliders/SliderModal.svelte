@@ -1,6 +1,6 @@
-<Modal bind:open size="fs">
+<Modal bind:open size="lg">
 	{#key index}
-		<Slidy {slides} {index} snap="center" />
+		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" navigation={false} arrows={false} />
 	{/key}
 </Modal>
 
@@ -16,14 +16,4 @@
 </script>
 
 <style lang="scss">
-	section {
-		--slidy-slide-width: 30%;
-	}
-	.slide {
-		width: 100%;
-		height: 100%;
-		padding: 1rem;
-		border: 1px solid $primary-color;
-		border-radius: 1rem;
-	}
 </style>

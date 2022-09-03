@@ -1,4 +1,4 @@
-<main class="py-2 mt-2 texxt-center">
+<main class="py-2 mt-2 text-center">
 	<Container>
 		<slot />
 	</Container>
