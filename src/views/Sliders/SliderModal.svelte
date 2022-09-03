@@ -14,6 +14,3 @@
 	export let index: number = 3;
 	export let open = false;
 </script>
-
-<style lang="scss">
-</style>

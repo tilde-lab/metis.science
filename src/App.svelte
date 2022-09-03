@@ -21,3 +21,8 @@
 	let index: number;
 	let open = false;
 </script>
+
+<style>
+	@import '@slidy/svelte/dist/slidy.css';
+	@import './assets/global.css';
+</style>
