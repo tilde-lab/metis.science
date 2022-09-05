@@ -24,3 +24,7 @@ body,
 .slidy-slide {
 	margin: 0 !important;
 }
+
+.modal {
+	flex-flow: column;
+}
