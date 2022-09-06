@@ -1,7 +1,7 @@
 <Spectre>
 	<Header />
 	<Main>
-		<h1>Hello metis-science!</h1>
+		<h1>Your virtual lab &mdash;<br />with Metis!</h1>
 		<SliderMain {slides} />
 		<ImageGallery {images} bind:index bind:open />
 	</Main>

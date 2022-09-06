@@ -1,7 +1,11 @@
 <footer class="py-2 mt-2">
 	<Container>
 		<Grid>
-			<Col><span class="py-2" style="line-height: 2em;">© 2022 metis-science</span></Col>
+			<Col>
+			<span class="py-2" style="line-height: 2em;">
+				Developed by <a href="https://tilde.pro" target="_blank">Tilde MI</a> for <a href="https://www.basf.com" target="_blank">BASF SE</a> with the BSD open-source license.
+			</span>
+			</Col>
 			<Col col="auto">
 				<Switch bind:value={$darkTheme}>Dark theme</Switch>
 			</Col>
