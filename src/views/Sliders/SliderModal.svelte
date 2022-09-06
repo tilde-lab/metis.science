@@ -1,11 +1,15 @@
 <Modal bind:open size="lg">
 	{#key index}
-		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" />
+		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" let:item>
+			<Figure cover src={item.src}>
+				{item.caption}
+			</Figure>
+		</Slidy>
 	{/key}
 </Modal>
 
 <script lang="ts" context="module">
-	import { Modal } from 'svelte-spectre';
+	import { Figure, Modal } from 'svelte-spectre';
 	import { Slidy, type Slide } from '@slidy/svelte';
 </script>
 

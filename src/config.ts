@@ -14,15 +14,15 @@ const slides = [
 ];
 
 const images = [
-    { id: 0, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 1, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 2, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 3, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 4, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 5, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 6, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 7, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
-    { id: 8, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800 },
+    { id: 0, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 1, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 2, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 3, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 4, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 5, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 6, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 7, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
+    { id: 8, src: 'assets/img/metis.png', alt: 'metis', width: 800, height: 800, caption: 'Image caption' },
 ]
 
 export { slides, images }
