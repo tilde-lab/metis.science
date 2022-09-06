@@ -1,15 +1,10 @@
 {
 	"name": "metis-science",
 	"description": "Metis-science",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"private": true,
-	"license": "MIT",
 	"main": "index.js",
 	"type": "module",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/tilde-lab/metis.science.git"
-	},
 	"scripts": {
 		"build": "node esbuild",
 		"dev": "node esbuild --dev",
