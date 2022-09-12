@@ -1,7 +1,7 @@
-<Modal bind:open size="lg">
+<Modal bind:open size="fs">
 	{#key index}
 		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" let:item>
-			<Figure cover src={item.src}>
+			<Figure width={item.width} height={item.height} contain src={item.src}>
 				{item.caption}
 			</Figure>
 		</Slidy>

@@ -3,7 +3,7 @@
 		{#each images as image, i}
 			<Col col="4">
 				<Button on:click={() => setIndex(i)}>
-					<img src={image.src} alt={image.alt} />
+					<img width="150" height="150" src={image.src} alt={image.alt} />
 				</Button>
 			</Col>
 		{/each}
@@ -31,11 +31,13 @@
 		margin: auto;
 		padding-top: 3rem;
 		:global(button) {
-			width: 150px;
-			height: 150px !important;
+			width: 100%;
+			height: auto !important;
 		}
 		img {
 			max-width: 100%;
+			object-fit: contain;
+			height: auto;
 		}
 	}
 </style>
