@@ -1,4 +1,4 @@
-<Slidy {slides} let:item {index} snap="center" axis="y" clamp={1} --slidy-slide-width="50%" navigation={false} arrows={false} counter={false}>
+<Slidy {slides} loop={true} let:item {index} snap="center" axis="y" clamp={1} --slidy-slide-width="50%" navigation={false} arrows={false} counter={false}>
 	<div class="slide">
 		<h2>{item.header}</h2>
 		<p>{item.text}</p>
