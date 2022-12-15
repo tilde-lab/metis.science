@@ -1,6 +1,6 @@
-<Modal bind:open size="fs">
+<Modal bind:open size="lg">
 	{#key index}
-		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" let:item>
+		<Slidy {slides} {index} snap="center" --slidy-slide-width="100%" let:item loop={true} navigation={false}>
 			<Figure width={item.width} height={item.height} contain src={item.src}>
 				{item.caption}
 			</Figure>

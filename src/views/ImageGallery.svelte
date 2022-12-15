@@ -3,7 +3,7 @@
 		{#each images as image, i}
 			<Col col="4">
 				<Button on:click={() => setIndex(i)}>
-					<img width="150" height="150" src={image.src} alt={image.alt} />
+					<img width="150" height="150" src={image.src} alt={image.caption} title={image.caption} />
 				</Button>
 			</Col>
 		{/each}

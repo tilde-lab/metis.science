@@ -1,7 +1,7 @@
 {
 	"name": "metis-science",
 	"description": "Metis-science",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": true,
 	"main": "index.js",
 	"type": "module",
@@ -71,6 +71,8 @@
 	},
 	"devDependencies": {
 		"@slidy/svelte": "^3.3.0",
+		"@slidy/easing": "^1.0.5",
+		"@slidy/animation": "^1.0.7",
 		"@tsconfig/svelte": "^3.0.0",
 		"@types/eslint": "^8.4.6",
 		"@types/node": "^18.7.16",
