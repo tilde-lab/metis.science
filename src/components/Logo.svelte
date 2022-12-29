@@ -1,11 +1,12 @@
-<span {id} class="p-centered" style:--width={size}>
-	<slot>
-		{@html logo}
-	</slot>
+<span {id} style:--width={size}>
+	<Icon size="4x" color="dark">
+		{@html MetisLogo}
+	</Icon>
 </span>
 
 <script lang="ts" context="module">
-	import logo from '@/assets/img/metis.svg';
+	import { Icon } from 'svelte-spectre';
+	import MetisLogo from '@/assets/img/metis.svg';
 </script>
 
 <script lang="ts">
