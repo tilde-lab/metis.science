@@ -31,6 +31,7 @@
 		margin-top: 36px;
 		display: flex;
 		align-items: center;
+		z-index: 9999;
 	}
 	.menu span{
 		color: white
