@@ -1,16 +1,13 @@
 <Spectre>
 	<Header />
 	<Main/>
-	<!-- <Footer />
-	<SliderModal slides={images} {index} bind:open /> -->
+	<!-- <Footer /> -->
 </Spectre>
 
 <script lang="ts" context="module">
-	import { Spectre, Container, Hero } from 'svelte-spectre';
+	import { Spectre } from 'svelte-spectre';
 	import { Header, Footer, ImageGallery } from './views/';
 	import { Main } from './layouts/';
-	import { SliderMain, SliderModal } from '@/views/Sliders';
-	import { slides, images } from './config';
 	import { darkTheme } from '@/stores/theme';
 </script>
 
