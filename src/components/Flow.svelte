@@ -28,7 +28,7 @@
 <style lang="scss">
 
 	.flow {
-		padding: 48px 0;
+		padding: 40px 0;
 		background: #111;
 		color: white;
 		border-bottom: 1px solid #adadad;
