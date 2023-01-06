@@ -1,43 +1,47 @@
-<div class="hero_component columns">
-    <div class="column col-8">
-        <Hero>
-            <h1>Metis is your new</h1>
-            <h1 class="text-primary">virtual materials lab</h1>
-            <Button variant="secondary" size="xl">Download now</Button>
-        </Hero>
-    </div>
-    <div class="column col-4">
-        <img src="assets/img/hero.jpg" alt="img" />
-    </div>
+<div class="hero_component">
+	<Grid stack>
+		<Col col="7">
+			<div class="hero_content">
+				<Hero>
+					<h1>Metis is your new</h1>
+					<h1 class="text-primary">virtual materials lab</h1>
+					<Button variant="secondary" size="xl">Download now</Button>
+				</Hero>
+			</div>
+		</Col>
+		<Col col="5">
+			<img src="assets/img/hero.jpg" alt="img" />
+		</Col>
+	</Grid>
 </div>
 
 <script lang="ts">
-	import { Hero, Button } from 'svelte-spectre';
+	import { Hero, Button, Grid, Col } from 'svelte-spectre';
 </script>
 
 <style>
-    .hero_component {
+	.hero_component {
 		width: 100%;
 		height: calc(100vh - 145px);
+		display: flex;
 		align-items: center;
-		flex-wrap: nowrap;
 		margin: 0px;
-	}
-	.hero_component .col-8 {
 		padding-left: 50px;
+		padding-right: 0px;
 	}
-	.col-8 h1 {
+	.hero_component .hero_content {
+		display: flex;
+		height: 100%;
+		align-items: center;
+	}
+	.hero_component h1 {
 		font-size: 112px;
 		margin-bottom: 0px;
 	}
-	.col-8 h1.text-primary {
+	.hero_component h1.text-primary {
 		margin-bottom: 48px;
 	}
-
-	.col-4 {
-		padding: 0px;
-	}
-	.col-4 img {
+	.hero_component img {
 		width: 100%;
 		height: calc(100vh - 145px);
 		margin-bottom: 0px;

@@ -34,7 +34,7 @@
 		border-bottom: 1px solid #adadad;
 		border-top: 1px solid #adadad;
 		overflow: hidden;
-		margin-top: -3px;
+		margin-top: -8px;
 		display: flex;
 	}
 	.flow_wrapper{
