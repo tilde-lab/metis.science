@@ -1,14 +1,12 @@
 <div class="central">
-    <div class="central_dots">
-        <img src="assets/img/dots.png" alt="dots" />
-    </div>
-    <div class="central_inner">
-        <div class="central_title">Metis is the browser-based online collaborative system for the materials data management.</div>
-        <div class="central_text">
-            The X-ray powder diffraction (XRPD) data, phase identification, and ab initio (first-principles) modeling is supported.
-        </div>
-        <Logo />
-    </div>
+	<div class="central_dots">
+		<img src="assets/img/dots.png" alt="dots" />
+	</div>
+	<div class="central_inner">
+		<div class="central_title">Metis is the browser-based online collaborative system for the materials data management.</div>
+		<div class="central_text">The X-ray powder diffraction (XRPD) data, phase identification, and ab initio (first-principles) modeling is supported.</div>
+		<Logo />
+	</div>
 </div>
 
 <script lang="ts">

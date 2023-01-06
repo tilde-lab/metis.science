@@ -35,13 +35,13 @@
 
 	const activeTab = (index) => {
 		active_tab = index;
-        console.log(active_tab)
+		console.log(active_tab);
 	};
 </script>
 
 <style>
 	.goal {
-        position: relative;
+		position: relative;
 		background: #111;
 		padding: 160px 0 160px 50px;
 		color: white;
@@ -80,7 +80,7 @@
 		z-index: 1;
 		visibility: hidden;
 		transition: all 0.3s ease-in-out;
-        opacity: 0.9;
+		opacity: 0.9;
 	}
 	.goal_bottom_text {
 		margin-left: 77px;
