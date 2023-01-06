@@ -8,6 +8,8 @@
 	<Central />
 
 	<Goal />
+
+	<ApiGuide />
 </main>
 
 <script lang="ts">
@@ -16,6 +18,7 @@
 	import About from './About.svelte'
 	import Central from './Central.svelte'
 	import Goal from './Goal.svelte'
+	import ApiGuide from './ApiGuide.svelte';
 </script>
 
 <style>
