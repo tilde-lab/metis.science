@@ -1,17 +1,17 @@
 <div class="about">
-    <span class="about_title">about name</span>
-    <div class="about_content">
-        The Metis name stands for<br /> the Greek mythological deity of wisdom and
-        <span class="highlight">deep thought.</span>
-    </div>
-    <div class="about_bottom">From the solid state physics foundations, Metis accumulates the materials knowledge and derives the materials wisdom.</div>
-    <div class="about_plot">
-        <img src="assets/img/Vector.png" alt="vector_image" />
-    </div>
+	<span class="about_title">about name</span>
+	<div class="about_content">
+		The Metis name stands for<br /> the Greek mythological deity of wisdom and
+		<span class="highlight">deep thought.</span>
+	</div>
+	<div class="about_bottom">From the solid state physics foundations, Metis accumulates the materials knowledge and derives the materials wisdom.</div>
+	<div class="about_plot">
+		<img src="assets/img/Vector.png" alt="vector_image" />
+	</div>
 </div>
 
 <style>
-    .about {
+	.about {
 		background: #111;
 		padding: 160px 50px 320px;
 		position: relative;
