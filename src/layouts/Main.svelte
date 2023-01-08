@@ -14,6 +14,8 @@
 	<OpenSource />
 
 	<Backend />
+
+	<Visualize />
 </main>
 
 <script lang="ts">
@@ -24,7 +26,8 @@
 	import Goal from './Goal.svelte';
 	import ApiGuide from './ApiGuide.svelte';
 	import OpenSource from './OpenSource.svelte';
-	import Backend from './Backend.svelte'
+	import Backend from './Backend.svelte';
+	import Visualize from './Visualize.svelte';
 </script>
 
 <style>
