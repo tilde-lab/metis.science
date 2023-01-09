@@ -1,6 +1,6 @@
 <Spectre>
 	<Header />
-	<Main/>
+	<Main />
 	<Footer />
 </Spectre>
 

@@ -7,7 +7,7 @@
 			<ul class="mb-9">
 				{#each menus as item, index}
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
-					<li class="menu" on:click={() => activeTab(index)}>
+					<li class="menu {active_tab == index && 'active'}" on:click={() => activeTab(index)}>
 						<h1>{item.text}</h1>
 						{#if active_tab == index}
 							<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -55,6 +55,9 @@
 		align-items: center;
 		counter-increment: section;
 		cursor: pointer;
+	}
+	.goal .menu.active h1 {
+		background: #333;
 	}
 	.goal .menu h1 {
 		border-bottom: 1px solid #adadad;

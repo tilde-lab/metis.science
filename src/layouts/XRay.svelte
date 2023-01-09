@@ -101,7 +101,7 @@
 	}
 
 	.xray_detail {
-		padding: 160px 50px 0;
+		padding: 160px 0 0 30px;
 	}
 	.xray_detail .content {
 		margin-bottom: 108px;
