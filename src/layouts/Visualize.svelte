@@ -22,6 +22,7 @@
 			</div>
 		</Col>
 	</Grid>
+	<img src="assets/img/dots.png" alt="dots" class="dots" />
 </div>
 
 <script>
@@ -30,6 +31,9 @@
 </script>
 
 <style>
+	.visualize {
+		position: relative;
+	}
 	.visualize img {
 		width: 100%;
 		height: 685px;
@@ -80,5 +84,14 @@
 		object-fit: contain;
 		height: 40px;
 		margin-right: 70px;
+	}
+
+	img.dots {
+		position: absolute;
+		z-index: -1;
+		bottom: -69px;
+		left: 0;
+		height: 169px;
+		width: 351px;
 	}
 </style>

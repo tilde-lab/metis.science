@@ -17,6 +17,10 @@
 </script>
 
 <style style="scss">
+	header {
+		position: absolute !important;
+		width: 100%;
+	}
 	.brand {
 		display: flex;
 		align-items: center;
@@ -33,8 +37,8 @@
 		align-items: center;
 		z-index: 9999;
 	}
-	.menu span{
-		color: white
+	.menu span {
+		color: white;
 	}
 	.burger {
 		width: 48px;
@@ -54,5 +58,4 @@
 		height: 3px;
 		transition: transform 0.3s ease-in-out;
 	}
-	
 </style>
