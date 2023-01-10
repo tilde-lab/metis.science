@@ -7,6 +7,7 @@
 			<Button variant="secondary" size="xl">Download now</Button>
 		</Hero>
 	</div>
+	<img src="assets/img/dots.png" alt="dots" class="bottom_dots" />
 </div>
 
 <script lang="ts">
@@ -24,6 +25,14 @@
 		z-index: -1;
 		top: -69px;
 		left: 0;
+		height: 169px;
+		width: 351px;
+	}
+	.ready img.bottom_dots{
+		position: absolute;
+		z-index: -1;
+		bottom: -69px;
+		right: 0;
 		height: 169px;
 		width: 351px;
 	}
