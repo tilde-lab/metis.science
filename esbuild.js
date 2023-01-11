@@ -69,7 +69,7 @@ prepare().then(() => {
 		DEV && derver({
 			dir: 'dist',
 			host: 'localhost',
-			port: 5555,
+			port: 5556,
 			watch: ['dist', 'src'],
 			onwatch: async (lr, item) => {
 				if (item == 'src') {
