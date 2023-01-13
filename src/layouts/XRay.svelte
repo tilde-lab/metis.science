@@ -142,4 +142,10 @@
 		line-height: 116%;
 		font-weight: 500;
 	}
+
+	@media (max-width: 1650px) {
+		.xray .xray_img {
+			width: 45%;
+		}
+	}
 </style>

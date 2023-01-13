@@ -28,7 +28,7 @@
 		width: 351px;
 	}
 	.central .central_inner {
-		width: 1676px;
+		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
