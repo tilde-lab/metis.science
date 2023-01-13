@@ -1,20 +1,20 @@
 <div class="flow">
 	<div class="flow_wrapper">
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Digital materials lab assistant</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Free open-source virtual materials environment</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Highly-scalable cheap scientific simulations in the cloud</span>
 		</div>
 		<div class="flow_item">
-			<span class="sign">#</span>	
-			<span>Metis is a digital materials lab assistant.</span>	
+			<span class="sign">#</span>
+			<span>Modular reusable component-based system</span>
 		</div>
 	</div>
 </div>

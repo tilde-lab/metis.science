@@ -4,7 +4,7 @@
 	</div>
 	<div class="central_inner">
 		<div class="central_title">Metis is the browser-based online collaborative system for the materials data management.</div>
-		<div class="central_text">The X-ray powder diffraction (XRPD) data, phase identification, and ab initio (first-principles) modeling is supported.</div>
+		<div class="central_text">The X-ray powder diffraction data, phase identification, and first-principles <i>ab initio</i> modeling is fully supported.</div>
 		<Logo />
 	</div>
 </div>
