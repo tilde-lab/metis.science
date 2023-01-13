@@ -92,4 +92,10 @@
 		font-weight: 300;
 		width: 80%;
 	}
+	@media (max-width: 1580px) {
+		.goal img {
+			width: 45%;
+			height: 409px;
+		}
+	}
 </style>
