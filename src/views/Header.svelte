@@ -101,7 +101,7 @@
 		width: 320px;
 		right: 60px;
 		margin-top: 30px;
-		background: #ccc;
+		background: #5755d9;
 		padding: 10px;
 		li {
 			list-style: none;

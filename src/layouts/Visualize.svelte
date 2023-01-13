@@ -6,7 +6,7 @@
 		<Col col="7">
 			<div class="visualize_text">
 				<div class="visualize_box">
-					<div class="title">GUI visualizes</div>
+					<div class="title">online GUI app</div>
 					<div class="context">
 						The Metis GUI visualizes crystal structures and X-ray patterns as you expect it. It is built on a modular components user interface kit.
 						All the human interactions are encapsulated here. Download and deploy it at your own web-server.
