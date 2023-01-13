@@ -1,8 +1,8 @@
 <header class="p-1">
 	<Navbar>
 		<div slot="left" class="brand">
-			<Logo size="4em" />
-			<span>Metis</span>
+			<Logo size="5em" />
+			<h1>Metis</h1>
 		</div>
 		<div slot="right" class="menu" on:click={ToggleMenu}>
 			<div class="menu_item">
@@ -49,16 +49,19 @@
 		align-items: center;
 		margin-top: 36px;
 		margin-left: 50px;
+		h1 {
+			margin-bottom: 0px;
+		}
 	}
 	span {
 		font-size: 48px;
 	}
 	.menu {
-		margin-right: 49px;
+		margin-right: 40px;
 		margin-top: 36px;
 		z-index: 9999;
 		cursor: pointer;
-		color: white;
+		color: #ddd;
 	}
 	.menu_item {
 		display: flex;
@@ -95,14 +98,17 @@
 
 	.opened_menu {
 		position: absolute;
-		width: 300px;
+		width: 320px;
 		right: 60px;
 		margin-top: 30px;
+		background: #5755d9;
+		padding: 10px;
 		li {
 			list-style: none;
 			margin-bottom: 28px;
 			font-size: 36px;
 			text-align: right;
+			color: #fff;
 		}
 	}
 </style>

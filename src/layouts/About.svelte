@@ -1,7 +1,7 @@
 <div class="about">
-	<span class="about_title">about name</span>
+	<span class="about_title">about the name</span>
 	<div class="about_content">
-		The Metis name stands for<br /> the Greek mythological deity of wisdom and
+		The <span class="highlight">Metis</span> name stands for the Greek mythological deity of <span class="highlight">wisdom</span> and
 		<span class="highlight">deep thought.</span>
 	</div>
 	<div class="about_bottom">From the solid state physics foundations, Metis accumulates the materials knowledge and derives the materials wisdom.</div>

@@ -24,7 +24,7 @@
 	.api_header {
 		padding: 28px 50px;
 		text-align: center;
-		font-size: 48px;
+		font-size: 28px;
 		color: white;
 	}
 	.api_body {
