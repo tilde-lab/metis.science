@@ -10,11 +10,11 @@
 	<img src="assets/img/dots.png" alt="dots" class="bottom_dots" />
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Hero, Button } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.ready {
 		position: relative;
 		margin-top: 100px;

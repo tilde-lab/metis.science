@@ -21,7 +21,7 @@
 	</Grid>
 </div>
 
-<script>
+<script lang="ts">
 	import { Grid, Col } from 'svelte-spectre';
 
 	const menus = [
@@ -39,7 +39,7 @@
 	};
 </script>
 
-<style>
+<style lang="scss">
 	.goal {
 		position: relative;
 		background: #111;

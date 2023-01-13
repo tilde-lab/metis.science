@@ -48,11 +48,11 @@
 	</Grid>
 </div>
 
-<script>
+<script lang="ts" context="module">
 	import { Grid, Col } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.xray_box {
 		padding: 160px 50px 0;
 		position: relative;

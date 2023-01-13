@@ -9,11 +9,11 @@
 	</div>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Logo } from '@/components';
 </script>
 
-<style>
+<style lang="scss">
 	.central {
 		position: relative;
 		padding: 180px 0;

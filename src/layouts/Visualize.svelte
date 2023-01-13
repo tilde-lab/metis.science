@@ -25,12 +25,12 @@
 	<img src="assets/img/dots.png" alt="dots" class="dots" />
 </div>
 
-<script>
+<script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
 </script>
 
-<style>
+<style lang="scss">
 	.visualize {
 		position: relative;
 	}

@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.about {
 		background: #111;
 		padding: 160px 50px 320px;

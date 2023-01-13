@@ -40,11 +40,11 @@
 	</Grid>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.backend {
 		padding: 160px 50px 200px;
 		color: white;

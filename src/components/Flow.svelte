@@ -19,12 +19,6 @@
 	</div>
 </div>
 
-<script lang="ts" context="module">
-</script>
-
-<script lang="ts">
-</script>
-
 <style lang="scss">
 
 	.flow {
