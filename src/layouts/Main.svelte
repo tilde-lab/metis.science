@@ -5,7 +5,7 @@
 
 	<About />
 
-	<Central />
+	<!-- <Central />
 
 	<Goal />
 
@@ -25,7 +25,7 @@
 
 	<XRay />
 
-	<Ready />
+	<Ready /> -->
 </main>
 
 <script lang="ts">
