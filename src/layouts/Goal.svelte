@@ -78,7 +78,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 792px;
+		width: 46%;
 		height: 509px;
 		z-index: 1;
 		visibility: hidden;

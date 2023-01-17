@@ -67,7 +67,7 @@
 	.backend_code_img {
 		position: absolute;
 		top: 160px;
-		left: 1534px;
+		right: -300px;
 		height: 354px;
 		width: auto;
 		object-fit: contain;

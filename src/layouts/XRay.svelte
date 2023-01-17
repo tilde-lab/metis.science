@@ -96,7 +96,7 @@
 	}
 	.xray .xray_img {
 		position: absolute;
-		width: 820px;
+		width: 42%;
 		height: 862px;
 	}
 
