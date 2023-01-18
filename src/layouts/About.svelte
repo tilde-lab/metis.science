@@ -28,6 +28,14 @@
 		width: 1110px;
 		font-size: 68px;
 		text-indent: 280px;
+		@media (max-width: 1440px) {
+			font-size: 52px;
+		}
+		@media (max-width: 1100px) {
+			width: 80%;
+			font-size: 42px;
+			text-indent: 140px;
+		}
 	}
 	.about_content .highlight {
 		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
@@ -48,6 +56,10 @@
 		bottom: 160px;
 		right: 149px;
 		width: 645px;
+		@media (max-width: 1100px) {
+			font-size: 24px;
+			right: 0px;
+		}
 	}
 	.about_plot {
 		width: 657px;

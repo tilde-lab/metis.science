@@ -55,6 +55,9 @@
 	}
 	span {
 		font-size: 48px;
+		@media (max-width: 1024px) {
+			font-size: 28px;
+		}
 	}
 	.menu {
 		margin-right: 40px;
@@ -108,6 +111,13 @@
 			font-size: 36px;
 			text-align: right;
 			color: #fff;
+			@media (max-width: 1024px) {
+				font-size: 28px;
+			}
+			@media (max-width: 724px) {
+				font-size: 24px;
+				margin-bottom: 18px;
+			}
 		}
 	}
 </style>
