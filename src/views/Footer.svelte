@@ -11,7 +11,7 @@
 				<h1>About</h1>
 				<li><a href="#">Contacts</a></li>
 				<li><a href="#">Team</a></li>
-				<li><a href="#">Our story</a></li>
+				<li><a href="#">Press Kit</a></li>
 			</div>
 		</Col>
 		<Col col="3">
@@ -19,8 +19,7 @@
 				<h1>Product</h1>
 				<li><a href="#">Why Metis?</a></li>
 				<li><a href="#">Technical Details</a></li>
-				<li><a href="#">Download and Try</a></li>
-				<li><a href="#">GitHub</a></li>
+				<li><a href="https://kit.metis.science">User Interface Kit</a></li>
 			</div>
 		</Col>
 		<Col col="3">
