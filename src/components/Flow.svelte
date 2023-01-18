@@ -19,12 +19,6 @@
 	</div>
 </div>
 
-<script lang="ts" context="module">
-</script>
-
-<script lang="ts">
-</script>
-
 <style lang="scss">
 
 	.flow {
@@ -51,7 +45,7 @@
 			}
 		}
 	}
-
+	
 	.flow_item{
 		display: flex;
 		align-items: center;
@@ -64,5 +58,11 @@
 	.flow_item .sign{
 		font-size: 40px;
 		margin-right: 5px;
+	}
+	
+	@media (max-width: 1444px) {
+		.flow_item{
+			margin-right: 40px;
+		}
 	}
 </style>

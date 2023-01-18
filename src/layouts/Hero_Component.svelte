@@ -15,11 +15,11 @@
 	</Grid>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Hero, Button, Grid, Col } from 'svelte-spectre';
 </script>
 
-<style>
+<style lang="scss">
 	.hero_component {
 		width: 100%;
 		height: calc(100vh - 145px);

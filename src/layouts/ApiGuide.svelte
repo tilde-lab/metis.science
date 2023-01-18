@@ -16,10 +16,7 @@
 	</div>
 </div>
 
-<script lang="ts">
-</script>
-
-<style>
+<style lang="scss">
 	.api_guide {
 		position: relative;
 		overflow: hidden;

@@ -2,7 +2,7 @@
 	<Navbar>
 		<div slot="left" class="brand">
 			<Logo size="5em" />
-			<h1>Metis</h1>
+			<span>Metis</span>
 		</div>
 		<div slot="right" class="menu" on:click={ToggleMenu}>
 			<div class="menu_item">
@@ -61,7 +61,7 @@
 		margin-top: 36px;
 		z-index: 9999;
 		cursor: pointer;
-		color: #ddd;
+		color: white;
 	}
 	.menu_item {
 		display: flex;
@@ -99,9 +99,8 @@
 	.opened_menu {
 		position: absolute;
 		width: 320px;
-		right: 60px;
+		right: 40px;
 		margin-top: 30px;
-		background: #5755d9;
 		padding: 10px;
 		li {
 			list-style: none;
