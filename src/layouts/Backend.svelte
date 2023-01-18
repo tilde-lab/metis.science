@@ -73,7 +73,6 @@
 		object-fit: contain;
 		z-index: 1;
 	}
-
 	.backend_techs {
 		margin-right: 100px;
 		margin-left: -50px;
@@ -93,7 +92,6 @@
 	.backend_row:last-child {
 		justify-content: flex-start;
 	}
-
 	.backend_bottom {
 		display: flex;
 		height: 100%;

@@ -9,24 +9,27 @@
 		<Col col="3">
 			<div class="footer_about">
 				<h1>About</h1>
-				<li>Intro</li>
-				<li>Why Metis?</li>
-				<li>Technical Details</li>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Team</a></li>
+				<li><a href="#">Our story</a></li>
 			</div>
 		</Col>
 		<Col col="3">
 			<div class="footer_product">
 				<h1>Product</h1>
-				<li>Download and try</li>
-				<li>GitHub</li>
+				<li><a href="#">Why Metis?</a></li>
+				<li><a href="#">Technical Details</a></li>
+				<li><a href="#">Download and Try</a></li>
+				<li><a href="#">GitHub</a></li>
 			</div>
 		</Col>
 		<Col col="3">
-			<div class="footer_contact">
-				<h1>Contacts</h1>
-				<li>Team</li>
-				<li>Why Metis?</li>
-				<li>Technical Details</li>
+			<div class="footer_legal">
+				<h1>Legal</h1>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Contacts</a></li>
+				<li></li>
 			</div>
 		</Col>
 	</Grid>
@@ -45,18 +48,21 @@
 
 <style lang="scss">
 	footer {
-		padding: 80px 50px 100px;
+		padding: 80px 50px 50px;
 		.white_logo {
 			display: flex;
 			align-items: center;
 			h1 {
-				margin-bottom: 0px;
+				margin-bottom: 0;
 			}
 		}
 		li {
 			list-style: none;
 			font-size: 28px;
-			margin-bottom: 28px;
+			margin-bottom: 20px;
+		}
+		li a, li a:hover {
+			color: #fff !important;
 		}
 	}
 	// :global(body),

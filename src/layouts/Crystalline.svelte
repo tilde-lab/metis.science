@@ -1,6 +1,6 @@
 <div class="crystalline">
 	<div class="pots">
-		<img src="assets/img/Vector.png" alt="vector" />
+		<img src="assets/img/grid.png" alt="vector image" />
 	</div>
 	<div class="title">crystalline structures</div>
 	<div class="content">
@@ -11,7 +11,7 @@
 		The crystalline structures are then stored in the centralized database in a single unified format and can be data-mined, e.g. attributed to the standard
 		material phases known.
 	</div>
-	<img src="assets/img/crystalline_structure.jpg" alt="crystalline" class="crystalline_img" />
+	<img src="assets/img/crystalline_structure.jpg" alt="crystalline structure" class="crystalline_img" />
 </div>
 
 <style lang="scss">
@@ -53,7 +53,6 @@
 		line-height: 136%;
 		width: 73%;
 	}
-
 	.crystalline img.crystalline_img {
 		width: 100%;
 		height: 271px;

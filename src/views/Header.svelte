@@ -15,11 +15,11 @@
 			</div>
 			{#if is_open}
 				<div class="opened_menu">
-					<li>Intro</li>
-					<li>Why Metis?</li>
-					<li>Technical Details</li>
-					<li>Download and try</li>
-					<li>GitHub</li>
+					<li><a href="#">Intro</a></li>
+					<li><a href="#">Why Metis?</a></li>
+					<li><a href="#">Technical Details</a></li>
+					<li><a href="#">Download and Try</a></li>
+					<li><a href="#">GitHub</a></li>
 				</div>
 			{/if}
 		</div>
@@ -77,7 +77,6 @@
 		justify-content: space-between;
 		cursor: pointer;
 	}
-
 	.burger:after,
 	.burger:before,
 	.cross::after,
@@ -95,18 +94,20 @@
 	.cross::after {
 		transform: translateY(-8px) rotate(148deg);
 	}
-
 	.opened_menu {
 		position: absolute;
 		width: 320px;
 		right: 40px;
-		margin-top: 30px;
+		margin-top: 10px;
 		padding: 10px;
 		li {
 			list-style: none;
-			margin-bottom: 28px;
+			margin-bottom: 10px;
 			font-size: 36px;
 			text-align: right;
+			color: #fff;
+		}
+		li a {
 			color: #fff;
 		}
 	}
