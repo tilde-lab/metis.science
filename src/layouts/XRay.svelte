@@ -25,7 +25,7 @@
 					</div>
 					<div class="xray_item">
 						<span class="sign">#</span>
-						<span class="techs">VASP</span>
+						<span class="techs">CIF</span>
 					</div>
 				</div>
 				<div class="xray_detail_row">
@@ -38,7 +38,7 @@
 						<span class="techs">CRYSTAL</span>
 					</div>
 				</div>
-				<div class="title">ab initio (first-principles) modeling</div>
+				<div class="title">ab initio <span class="highlight1">first-principles</span> modeling</div>
 				<div class="content">
 					Metis supports scientific codes VASP, Quantum Espresso, and CRYSTAL to model the electronic structure of materials and to predict a wide
 					range of physical properties, based on the only crystalline structure provided.
@@ -68,7 +68,7 @@
 		line-height: 108%;
 		font-weight: 500;
 	}
-	.xray_box span.highlight1 {
+	.xray_box span.highlight1, .xray_detail span.highlight1 {
 		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
 		background: linear-gradient(
 			104deg,
@@ -99,7 +99,6 @@
 		width: 42%;
 		height: 862px;
 	}
-
 	.xray_detail {
 		padding: 160px 0 0 30px;
 	}
@@ -142,7 +141,6 @@
 		line-height: 116%;
 		font-weight: 500;
 	}
-
 	@media (max-width: 1650px) {
 		.xray .xray_img {
 			width: 45%;

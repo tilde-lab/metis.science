@@ -20,7 +20,6 @@
 </div>
 
 <style lang="scss">
-
 	.flow {
 		padding: 40px 0;
 		background: #111;
@@ -37,18 +36,17 @@
 		display: flex;
 		animation: running-anim 10s forwards infinite linear;
 		@keyframes running-anim {
-            from {
-                transform: translateX(0)
+			from {
+				transform: translateX(0)
 			}
-            to {
-                transform: translateX(-39.5vw)
+			to {
+				transform: translateX(-39.5vw)
 			}
 		}
 		@media (max-width: 1016px) {
 			width: 300vw;
 		}
 	}
-	
 	.flow_item{
 		display: flex;
 		align-items: center;
@@ -67,8 +65,10 @@
 	.flow_item .sign{
 		font-size: 40px;
 		margin-right: 5px;
+
 		@media (max-width: 1276px) {
 			font-size: 22px;
-		}
+    }
 	}
+
 </style>

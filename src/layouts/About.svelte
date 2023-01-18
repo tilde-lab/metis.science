@@ -4,9 +4,9 @@
 		The <span class="highlight">Metis</span> name stands for the Greek mythological deity of <span class="highlight">wisdom</span> and
 		<span class="highlight">deep thought.</span>
 	</div>
-	<div class="about_bottom">From the solid state physics foundations, Metis accumulates the materials knowledge and derives the materials wisdom.</div>
+	<div class="about_bottom">From the solid state physics foundations, Metis accumulates the materials <span class="highlight">knowledge</span> and derives the materials <span class="highlight">wisdom.</span></div>
 	<div class="about_plot">
-		<img src="assets/img/Vector.png" alt="vector_image" />
+		<img src="assets/img/grid.png" alt="vector image" />
 	</div>
 </div>
 
@@ -37,7 +37,7 @@
 			text-indent: 140px;
 		}
 	}
-	.about_content .highlight {
+	.about_content .highlight, .about_bottom .highlight {
 		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
 		background: linear-gradient(
 			104deg,

@@ -4,7 +4,7 @@
 			<div class="bff_box">
 				<div class="bff_title">backend-for-frontend</div>
 				<div class="bff_content">
-					The Metis backend-for-frontend (BFF) deals with the user-related logics (accounts, access, permissions, etc.). All the user and data
+					The Metis backend-for-frontend (BFF) deals with the user-related logics: accounts, access, permissions, etc. All the user and data
 					management is encapsulated here. Download and deploy it at your own web-server.
 				</div>
 				<div class="bff_bottom_box">

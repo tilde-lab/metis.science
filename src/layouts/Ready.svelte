@@ -4,7 +4,7 @@
 		<Hero>
 			<h1>Ready to get started?</h1>
 			<h1 class="detail">Download your digital materials lab assistant right now.</h1>
-			<Button variant="secondary" size="xl">Download now</Button>
+			<Button variant="primary" size="xl">Download now</Button>
 		</Hero>
 	</div>
 	<img src="assets/img/dots.png" alt="dots" class="bottom_dots" />

@@ -85,7 +85,6 @@
 		height: 40px;
 		margin-right: 70px;
 	}
-
 	img.dots {
 		position: absolute;
 		z-index: -1;

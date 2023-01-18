@@ -35,7 +35,7 @@
 
 	const activeTab = (index) => {
 		active_tab = index;
-		console.log(active_tab);
+		//console.log(active_tab);
 	};
 </script>
 
@@ -49,7 +49,6 @@
 	.goal h1 {
 		font-size: 48px;
 	}
-
 	.goal .menu {
 		display: flex;
 		align-items: center;
@@ -57,7 +56,7 @@
 		cursor: pointer;
 	}
 	.goal .menu.active h1 {
-		background: #333;
+		background: #5755d9;
 	}
 	.goal .menu h1 {
 		border-bottom: 1px solid #adadad;
@@ -70,9 +69,9 @@
 	}
 	.goal .menu::before {
 		content: '(' counter(section, lower-alpha) ') ';
-		font-size: 28px;
-		font-weight: 300;
+		font-size: 22px;
 		margin-right: 28px;
+		font-style: italic;
 	}
 	.goal img {
 		position: absolute;
