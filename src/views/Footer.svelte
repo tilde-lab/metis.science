@@ -24,7 +24,7 @@
 		<Col col="3">
 			<div class="footer_contact">
 				<h1>Contacts</h1>
-				<li>Intro</li>
+				<li>Team</li>
 				<li>Why Metis?</li>
 				<li>Technical Details</li>
 			</div>

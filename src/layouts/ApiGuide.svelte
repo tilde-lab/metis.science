@@ -1,5 +1,5 @@
 <div class="api_guide">
-	<div class="api_header bg-primary">These operations can be also done programmatically via the Metis API.</div>
+	<div class="api_header bg-primary">All these operations can be also done programmatically via the Metis API.</div>
 	<div class="api_body">
 		<div class="api_item">
 			<img src="assets/img/code.jpg" alt="code" />
