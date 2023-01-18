@@ -38,6 +38,7 @@
 		}
 	}
 	.about_content .highlight {
+		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
 		background: linear-gradient(
 			104deg,
 			rgba(87, 85, 217, 0) 20px,
@@ -48,6 +49,7 @@
 		color: white;
 		padding: 0 20px;
 		line-height: 1.3;
+		padding-top: 10px
 	}
 	.about_bottom {
 		font-size: 28px;

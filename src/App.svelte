@@ -1,7 +1,7 @@
 <Spectre>
 	<Header />
 	<Main />
-	<!-- <Footer /> -->
+	<Footer />
 </Spectre>
 
 <script lang="ts" context="module">
