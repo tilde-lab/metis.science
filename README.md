@@ -1,6 +1,6 @@
 # Metis project promo website
 
-![Metis logo](https://github.com/tilde-lab/metis.science/blob/master/src/assets/img/metis.svg | width=300px)
+<img src="https://github.com/tilde-lab/metis.science/blob/master/src/assets/img/metis.svg" width="300" height="300" />
 
 This is the source code and the [compiled deployment](https://github.com/tilde-lab/metis.science/tree/gh-pages) of the main [Metis landing website](https://metis.science), built with the [svelte-spectre](https://kit.metis.science) UI-kit.
 
