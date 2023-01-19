@@ -54,6 +54,10 @@
 		align-items: center;
 		counter-increment: section;
 		cursor: pointer;
+		background: transparent !important;
+	}
+	.menu:not(.menu-nav) {
+		box-shadow: none !important;
 	}
 	.goal .menu.active h1 {
 		background: #5755d9;
