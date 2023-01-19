@@ -1,21 +1,43 @@
 <div class="hero_component">
-	<Grid stack>
-		<Col col="7">
-			<div class="hero_content">
-				<Hero>
-					<h1>Metis is your new</h1>
-					<h1 class="text-primary">virtual materials lab</h1>
-				</Hero>
-			</div>
-		</Col>
-		<Col col="5">
-			<img src="assets/img/hero.jpg" alt="img" />
-		</Col>
-	</Grid>
+	{#if !$media.sm}
+		<Grid stack>
+			<Col col="7">
+				<div class="hero_content">
+					<Hero>
+						<h1>Metis is your new</h1>
+						<h1 class="text-primary">virtual materials lab</h1>
+						<Button variant="secondary" size="xl">Download now</Button>
+					</Hero>
+				</div>
+			</Col>
+			<Col col="5">
+				<img src="assets/img/hero.jpg" alt="img" />
+			</Col>
+		</Grid>
+	{:else}
+		<Grid stack>
+			<Col col="12">
+				<img src="assets/img/hero.jpg" alt="img" />
+			</Col>
+			<Col col="12">
+				<div class="hero_content">
+					<Hero>
+						<h1>Metis is your new</h1>
+						<h1 class="text-primary">virtual materials lab</h1>
+						<Button variant="secondary" size="xl">Download now</Button>
+					</Hero>
+				</div>
+			</Col>
+		</Grid>
+	{/if}
 </div>
 
 <script lang="ts" context="module">
-	import { Hero, Grid, Col } from 'svelte-spectre';
+	import { Hero, Grid, Col, Button } from 'svelte-spectre';
+</script>
+
+<script>
+	import { media } from '@/stores/media';
 </script>
 
 <style lang="scss">
@@ -28,8 +50,9 @@
 		padding-left: 50px;
 		padding-right: 0px;
 		@media (max-width: 1024px) {
-			height: calc(70vh - 145px);
+			height: 100%;
 		}
+		position: relative;
 	}
 	.hero_component .hero_content {
 		display: flex;
@@ -37,6 +60,10 @@
 		align-items: center;
 		@media (max-width: 1024px) {
 			margin-top: 48px;
+		}
+		@media (max-width: 768px) {
+			padding-top: 100px;
+			padding-bottom: 100px;
 		}
 	}
 	.hero_component h1 {
@@ -60,7 +87,35 @@
 		height: calc(100vh - 145px);
 		margin-bottom: 0px;
 		@media (max-width: 1024px) {
-			height: calc(70vh - 145px);
+			height: 100%;
+		}
+	}
+
+	@media (max-width: 620px) {
+		.hero_component {
+			width: 100%;
+			margin: 0px;
+			padding-left: 0px;
+			padding-right: 0px;
+			display: flex;
+			align-items: flex-start;
+		}
+		.hero_component img {
+			height: 480px;
+			margin-top: 90px;
+		}
+		.hero_component .hero_content {
+			display: contents;
+			height: 100%;
+			margin-top: 20px;
+			width: 100%;
+			justify-content: center;
+		}
+		.hero_component h1 {
+			font-size: 48px;
+		}
+		.hero_component button {
+			width: 100%;
 		}
 	}
 </style>

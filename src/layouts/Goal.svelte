@@ -80,7 +80,6 @@
 		width: 46%;
 		height: 509px;
 		z-index: 1;
-		visibility: hidden;
 		transition: all 0.3s ease-in-out;
 		opacity: 0.9;
 	}

@@ -4,6 +4,7 @@
 			<Logo size="5em" />
 			<span>Metis</span>
 		</div>
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<div slot="right" class="menu_holder" on:click={ToggleMenu}>
 			<div class="menu_item">
 				{#if !is_open}
@@ -19,6 +20,7 @@
 					<li><a href="#">Why Metis?</a></li>
 					<li><a href="#">Technical Details</a></li>
 					<li><a href="#">Download and Try</a></li>
+					<li><a href="#">GitHub</a></li>
 				</div>
 			{/if}
 		</div>
@@ -108,7 +110,6 @@
 			margin-bottom: 10px;
 			font-size: 36px;
 			text-align: right;
-			color: #fff;
 			@media (max-width: 1024px) {
 				font-size: 28px;
 			}
@@ -119,6 +120,47 @@
 		}
 		li a {
 			color: #fff;
+		}
+	}
+
+	@media (max-width: 620px) {
+		header {
+			position: fixed !important;
+			width: 100%;
+			z-index: 9999999;
+			background-color: #fff;
+		}
+		.brand {
+			display: flex;
+			align-items: center;
+			margin-top: 20px;
+			margin-left: 36px;
+		}
+		.menu {
+			margin-right: 36px;
+			margin-top: 20px;
+			color: $primary-color;
+		}
+		.opened_menu {
+			background-color: #fff;
+			margin-top: 8px;
+			height: 500px;
+			right: 0px;
+			padding-right: 40px;
+		}
+		li a {
+			color: $primary-color !important;
+		}
+		.burger,
+		.cross {
+			width: 38px;
+			height: 18px;
+		}
+		.burger:after,
+		.burger:before,
+		.cross::after,
+		.cross::before {
+			background: $primary-color;
 		}
 	}
 </style>
