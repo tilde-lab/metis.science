@@ -81,6 +81,10 @@ body,
     color: #25292E!important
 } */
 
+.spectre .menu:not(.menu-nav) {
+	box-shadow: none !important;
+}
+
 @media (max-width: 620px) {
 	.hero_component button {
 		width: 100%;
