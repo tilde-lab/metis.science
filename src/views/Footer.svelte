@@ -5,6 +5,9 @@
 				<Logo size="5em" color="light" />
 				<h1>Metis</h1>
 			</div>
+			<div class="theme_switch">
+				<Switch bind:value={$darkTheme}>Dark theme</Switch>
+			</div>
 		</Col>
 		<Col col="3">
 			<div class="footer_about">
@@ -28,21 +31,22 @@
 				<li><a href="#">Terms</a></li>
 				<li><a href="#">Privacy</a></li>
 				<li><a href="#">Contacts</a></li>
-				<li></li>
 			</div>
 		</Col>
 	</Grid>
 </footer>
 
 <script lang="ts" context="module">
-	import { Col, Grid } from 'svelte-spectre';
+	import { Col, Grid, Switch } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
-	// import { nodeAttribute } from '@/helpers/dom';
-	// import { darkTheme } from '@/stores/theme';
+
+	import { nodeAttribute } from '@/helpers/dom';
+
+	import { darkTheme } from '@/stores/theme';
 </script>
 
 <script lang="ts">
-	// $: nodeAttribute(document.documentElement, 'color-scheme', $darkTheme ? 'dark' : 'light');
+	$: nodeAttribute(document.documentElement, 'color-scheme', $darkTheme ? 'dark' : 'light');
 </script>
 
 <style lang="scss">
@@ -55,12 +59,16 @@
 				margin-bottom: 0;
 			}
 		}
+		.theme_switch {
+			margin-top: 135px;
+		}
 		li {
 			list-style: none;
 			font-size: 28px;
 			margin-bottom: 20px;
 		}
-		li a, li a:hover {
+		li a,
+		li a:hover {
 			color: #fff !important;
 		}
 	}

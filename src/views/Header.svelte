@@ -19,7 +19,6 @@
 					<li><a href="#">Why Metis?</a></li>
 					<li><a href="#">Technical Details</a></li>
 					<li><a href="#">Download and Try</a></li>
-					<li><a href="#">GitHub</a></li>
 				</div>
 			{/if}
 		</div>

@@ -1,18 +1,25 @@
 # Metis project promo website
 
+![Metis logo](https://github.com/tilde-lab/metis.science/blob/master/src/assets/img/metis.svg "Metis.Science")
+
 This is the source code and the [compiled deployment](https://github.com/tilde-lab/metis.science/tree/gh-pages) of the main [Metis landing website](https://metis.science), built with the [svelte-spectre](https://kit.metis.science) UI-kit.
 
-All the edits in this repository are immediately reflected at the [Metis website](https://metis.science).
+All the edits in this repository are immediately reflected at the [Metis website](https://metis.science) thanks to the [GitHub action scenario](https://github.com/tilde-lab/metis.science/tree/master/.github).
 
 
 ### Requirements
 
-This website is written in TypeScript language using the Svelte frontend and Spectre style framework. If you wish to run this website elsewhere (e.g. at your own local PC), clone or download this repository and make sure you have the newest JavaScript / TypeScript environment at hand. For example, in your terminal console, the command `node -v` should print a version above `v14` at least. Also the NodeJS package manager should work, that is, the command `npm -v` should print a version above `7` at least.
+This website is written in the TypeScript language using the Svelte frontend and Spectre style framework. If you wish to run this website elsewhere (e.g. at your own local PC), clone or download this repository and make sure you have the newest JavaScript / TypeScript environment at hand. For example, in your terminal console, the command `node -v` should print a version above `v14` at least. Also the NodeJS package manager should work, that is, the command `npm -v` should print a version above `7` at least.
 
 
 ### Metis infra
 
-Refer to the main parts of the whole Metis infrastructure: [GUI](https://github.com/basf/metis-gui) &rlarr; [BFF](https://github.com/basf/metis-bff) &rlarr; [backend](https://github.com/basf/metis-backend). There is also the [Metis API client](https://github.com/tilde-lab/metis-client) written in Python for the programmatic interactions with the Metis server.
+Refer to the main parts of the whole Metis infrastructure:
+
+- [GUI](https://github.com/basf/metis-gui)
+- [BFF](https://github.com/basf/metis-bff)
+- [backend](https://github.com/basf/metis-backend)
+- [API client](https://github.com/tilde-lab/metis-client)
 
 
 ## Installation and deployment

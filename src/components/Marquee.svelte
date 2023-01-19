@@ -30,35 +30,35 @@
 		margin-top: -8px;
 		display: flex;
 	}
-	.flow_wrapper{
+	.flow_wrapper {
 		height: 100%;
 		width: 200vw;
 		display: flex;
 		animation: running-anim 10s forwards infinite linear;
 		@keyframes running-anim {
 			from {
-				transform: translateX(0)
+				transform: translateX(0);
 			}
 			to {
-				transform: translateX(-39.5vw)
+				transform: translateX(-39.5vw);
 			}
 		}
 	}
-	.flow_item{
+	.flow_item {
 		display: flex;
 		align-items: center;
 		margin-right: 180px;
 		width: max-content;
 	}
-	.flow_item span{
+	.flow_item span {
 		font-size: 28px;
 	}
-	.flow_item .sign{
+	.flow_item .sign {
 		font-size: 40px;
 		margin-right: 5px;
 	}
 	@media (max-width: 1444px) {
-		.flow_item{
+		.flow_item {
 			margin-right: 40px;
 		}
 	}

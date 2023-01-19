@@ -8,8 +8,9 @@
 				<div class="visualize_box">
 					<div class="title">online GUI app</div>
 					<div class="context">
-						The Metis GUI visualizes crystal structures and X-ray patterns as you expect it. It is built on a modular components <a href="https://kit.metis.science">user interface kit</a>.
-						All the human interactions are encapsulated here. Download and deploy it at your own web-server.
+						The Metis GUI visualizes crystal structures and X-ray patterns as you expect it. It is built on a modular components <a
+							href="https://kit.metis.science">user interface kit</a
+						>. All the human interactions are encapsulated here. Download and deploy it at your own web-server.
 					</div>
 				</div>
 				<div class="visualize_bottom_box">
@@ -65,7 +66,8 @@
 		font-size: 36px;
 		line-height: 134%;
 	}
-	.visualize_text .context a, .visualize_text .context a:hover {
+	.visualize_text .context a,
+	.visualize_text .context a:hover {
 		border-bottom: 2px solid #5755d9;
 		text-decoration: none;
 	}
