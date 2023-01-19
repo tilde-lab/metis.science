@@ -27,10 +27,10 @@
 		</Col>
 		<Col col="3">
 			<div class="footer_legal">
-				<h1>Legal</h1>
+				<h1>Transparency</h1>
 				<li><a href="#">Terms</a></li>
 				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Contacts</a></li>
+				<li><a href="https://github.com/tilde-lab/metis.science">This site on GitHub</a></li>
 			</div>
 		</Col>
 	</Grid>
