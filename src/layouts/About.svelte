@@ -60,6 +60,7 @@
 		bottom: 160px;
 		right: 149px;
 		width: 645px;
+		line-height: 1.5em;
 		@media (max-width: 1100px) {
 			font-size: 24px;
 			right: 0px;
