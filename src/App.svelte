@@ -13,5 +13,6 @@
 
 <style>
 	@import '@slidy/svelte/dist/slidy.css';
+	@import './assets/fonts/Exo2_64_Latin-ext.css';
 	@import './assets/global.css';
 </style>
