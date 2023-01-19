@@ -10,7 +10,7 @@ type MediaObject = {
 
 const queries: Queries = {
     xs: '(max-width: 480px)',
-    sm: '(max-width: 600px)',
+    sm: '(max-width: 620px)',
     md: '(max-width: 840px)',
     lg: '(max-width: 960px)',
     xl: '(max-width: 1280px)',

@@ -68,6 +68,16 @@
 
 		@media (max-width: 1276px) {
 			font-size: 22px;
-    }
+		}
+	}
+
+	@media (max-width: 676px) {
+		.flow {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.flow_wrapper {
+			width: 500vw;
+		}
 	}
 </style>

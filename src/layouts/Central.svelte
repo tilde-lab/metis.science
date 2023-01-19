@@ -46,7 +46,7 @@
 		margin-bottom: 60px;
 		font-size: 36px;
 	}
-	@media (max-width: 1020px) {
+	@media (max-width: 1040px) {
 		.central .central_inner {
 			padding-left: 40px;
 			padding-right: 40px;

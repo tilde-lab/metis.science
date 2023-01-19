@@ -23,7 +23,7 @@ body,
 .spectre .columns {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
-	width: 100%!important;
+	width: 100% !important;
 }
 
 .spectre .columns .column {
@@ -80,3 +80,13 @@ body,
 /* .codejar-wrap .token.property, .codejar-wrap .token.selector {
     color: #25292E!important
 } */
+
+.spectre .menu:not(.menu-nav) {
+	box-shadow: none !important;
+}
+
+@media (max-width: 620px) {
+	.hero_component button {
+		width: 100%;
+	}
+}

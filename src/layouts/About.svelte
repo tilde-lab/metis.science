@@ -2,7 +2,7 @@
 	<span class="about_title">about the name</span>
 	<div class="about_content">
 		The <span class="highlight">Metis</span> name stands for the Greek mythological deity of <span class="highlight">wisdom</span> and
-		<span class="highlight">deep thought.</span>
+		<span class="highlight star_highlight">deep thought.</span>
 	</div>
 	<div class="about_bottom">
 		From the solid state physics foundations, Metis accumulates the materials <span class="highlight">knowledge</span> and derives the materials
@@ -51,7 +51,7 @@
 			rgba(255, 255, 255, 0) calc(100% - 20px)
 		);
 		color: white;
-		padding: 0 20px;
+		padding: 0 16px;
 		padding-top: 10px;
 	}
 	.about_bottom {
@@ -60,7 +60,6 @@
 		bottom: 160px;
 		right: 149px;
 		width: 645px;
-		line-height: 1.5em;
 		@media (max-width: 1100px) {
 			font-size: 24px;
 			right: 0px;
@@ -72,5 +71,50 @@
 		position: absolute;
 		bottom: 93px;
 		right: -173px;
+	}
+
+	@media (max-width: 826px) {
+		.about_content .highlight {
+			padding-left: 15px;
+			padding-right: 15px;
+			background: linear-gradient(
+				104deg,
+				rgba(87, 85, 217, 0) 20px,
+				rgb(87, 85, 217) 20px,
+				rgb(87, 85, 217) calc(100% - 20px),
+				rgba(255, 255, 255, 0) calc(100% - 20px)
+			);
+		}
+		.star_highlight {
+			// display: flex;
+			max-inline-size: fit-content;
+		}
+		.about_content {
+			width: 100%;
+		}
+		.about_bottom {
+			width: 90%;
+			left: 20px;
+			right: 20px;
+		}
+	}
+	@media (max-width: 664px) {
+		.star_highlight {
+			display: flex;
+			max-inline-size: fit-content;
+		}
+	}
+	@media (max-width: 768px) {
+		.about_plot {
+			right: -500px;
+		}
+		.about_bottom {
+			line-height: 1.3;
+		}
+	}
+	@media (max-width: 572px) {
+		.star_highlight {
+			display: initial;
+		}
 	}
 </style>
