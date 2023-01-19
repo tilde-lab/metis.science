@@ -6,7 +6,6 @@
 					<Hero>
 						<h1>Metis is your new</h1>
 						<h1 class="text-primary">virtual materials lab</h1>
-						<Button variant="secondary" size="xl">Download now</Button>
 					</Hero>
 				</div>
 			</Col>
@@ -24,7 +23,6 @@
 					<Hero>
 						<h1>Metis is your new</h1>
 						<h1 class="text-primary">virtual materials lab</h1>
-						<Button variant="secondary" size="xl">Download now</Button>
 					</Hero>
 				</div>
 			</Col>
@@ -33,7 +31,7 @@
 </div>
 
 <script lang="ts" context="module">
-	import { Hero, Grid, Col, Button } from 'svelte-spectre';
+	import { Hero, Grid, Col } from 'svelte-spectre';
 </script>
 
 <script>
