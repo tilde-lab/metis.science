@@ -4,7 +4,7 @@
 			<Logo size="5em" />
 			<span>Metis</span>
 		</div>
-		<div slot="right" class="menu" on:click={ToggleMenu}>
+		<div slot="right" class="menu_holder" on:click={ToggleMenu}>
 			<div class="menu_item">
 				{#if !is_open}
 					<div class="burger" />
@@ -55,12 +55,13 @@
 	span {
 		font-size: 48px;
 	}
-	.menu {
+	.menu_holder {
 		margin-right: 40px;
 		margin-top: 36px;
 		z-index: 9999;
 		cursor: pointer;
 		color: white;
+		user-select: none;
 	}
 	.menu_item {
 		display: flex;

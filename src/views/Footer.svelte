@@ -1,4 +1,4 @@
-<footer class="bg-primary">
+<footer>
 	<Grid stack>
 		<Col col="3">
 			<div class="white_logo">
@@ -51,6 +51,7 @@
 
 <style lang="scss">
 	footer {
+		background: #111;
 		padding: 80px 50px 50px;
 		.white_logo {
 			display: flex;
@@ -60,11 +61,11 @@
 			}
 		}
 		.theme_switch {
-			margin-top: 135px;
+			margin: 120px 0 0 30px;
 		}
 		li {
 			list-style: none;
-			font-size: 28px;
+			font-size: 24px;
 			margin-bottom: 20px;
 		}
 		li a,
