@@ -35,12 +35,12 @@
 	.open_source h1 {
 		font-size: 68px;
 	}
-    .open_source span{
-        line-height: 108%;
-    }
-    .open_source h1 {
-        margin-bottom: 0px;
-    }
+	.open_source span {
+		line-height: 108%;
+	}
+	.open_source h1 {
+		margin-bottom: 0px;
+	}
 	.open_source span.highlight {
 		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
 		background: linear-gradient(

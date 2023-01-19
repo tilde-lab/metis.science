@@ -28,7 +28,7 @@
 		height: 169px;
 		width: 351px;
 	}
-	.ready img.bottom_dots{
+	.ready img.bottom_dots {
 		position: absolute;
 		z-index: -1;
 		bottom: -69px;

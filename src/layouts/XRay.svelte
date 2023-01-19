@@ -68,7 +68,8 @@
 		line-height: 108%;
 		font-weight: 500;
 	}
-	.xray_box span.highlight1, .xray_detail span.highlight1 {
+	.xray_box span.highlight1,
+	.xray_detail span.highlight1 {
 		clip-path: polygon(20px 25%, 100% 25%, calc(100% - 20px) 100%, 0 100%) !important;
 		background: linear-gradient(
 			104deg,

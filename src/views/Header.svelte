@@ -4,7 +4,7 @@
 			<Logo size="5em" />
 			<span>Metis</span>
 		</div>
-		<div slot="right" class="menu" on:click={ToggleMenu}>
+		<div slot="right" class="menu_holder" on:click={ToggleMenu}>
 			<div class="menu_item">
 				{#if !is_open}
 					<div class="burger" />
@@ -19,7 +19,6 @@
 					<li><a href="#">Why Metis?</a></li>
 					<li><a href="#">Technical Details</a></li>
 					<li><a href="#">Download and Try</a></li>
-					<li><a href="#">GitHub</a></li>
 				</div>
 			{/if}
 		</div>
@@ -59,12 +58,13 @@
 			font-size: 28px;
 		}
 	}
-	.menu {
+	.menu_holder {
 		margin-right: 40px;
 		margin-top: 36px;
 		z-index: 9999;
 		cursor: pointer;
 		color: white;
+		user-select: none;
 	}
 	.menu_item {
 		display: flex;
