@@ -5,7 +5,7 @@
 			<span>Metis</span>
 		</div>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<div slot="right" class="menu" on:click={ToggleMenu}>
+		<div slot="right" class="menu_holder" on:click={ToggleMenu}>
 			<div class="menu_item">
 				{#if !is_open}
 					<div class="burger" />
@@ -59,7 +59,7 @@
 			font-size: 28px;
 		}
 	}
-	.menu {
+	.menu_holder {
 		margin-right: 40px;
 		margin-top: 36px;
 		z-index: 9999;
@@ -135,7 +135,7 @@
 			margin-top: 20px;
 			margin-left: 36px;
 		}
-		.menu {
+		.menu_holder {
 			margin-right: 36px;
 			margin-top: 20px;
 			color: $primary-color;
