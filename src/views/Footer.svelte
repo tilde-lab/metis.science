@@ -20,8 +20,9 @@
 		<Col col="3">
 			<div class="footer_product">
 				<h1>Product</h1>
-				<li><a href="#">Why Metis?</a></li>
-				<li><a href="#">Technical Details</a></li>
+				<li><a href="#metis-features">Why Metis?</a></li>
+				<li><a href="#metis-backend">Software Details</a></li>
+				<li><a href="#metis-scientific">Scientific Details</a></li>
 				<li><a href="https://kit.metis.science">User Interface Kit</a></li>
 			</div>
 		</Col>

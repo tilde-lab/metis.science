@@ -1,4 +1,4 @@
-<div class="goal">
+<div class="goal" id="metis-features">
 	<Grid stack>
 		<Col col="6">
 			<h1>Metis provides the rich web-based graphical user interface (GUI) for</h1>
@@ -64,7 +64,7 @@
 	}
 	.goal .menu h1 {
 		border-bottom: 1px solid #adadad;
-		padding: 36px 0;
+		padding: 36px 0 36px 6px;
 		font-size: 36px;
 		width: 100%;
 	}
@@ -72,10 +72,9 @@
 		border-top: 1px solid #adadad;
 	}
 	.goal .menu::before {
-		content: '(' counter(section, lower-alpha) ') ';
+		content: '(' counter(section, lower-roman) ') ';
 		font-size: 22px;
 		margin-right: 28px;
-		font-style: italic;
 	}
 	.goal img {
 		position: absolute;

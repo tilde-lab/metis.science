@@ -1,4 +1,4 @@
-<div class="ready">
+<div class="ready" id="metis-download">
 	<img src="assets/img/dots.png" alt="dots" class="dots" />
 	<div class="ready_content">
 		<Hero>

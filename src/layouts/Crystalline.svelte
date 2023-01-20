@@ -11,7 +11,7 @@
 		The crystalline structures are then stored in the centralized database in a single unified format and can be data-mined, e.g. attributed to the standard
 		material phases known.
 	</div>
-	<img src="assets/img/crystalline_structure.jpg" alt="crystalline structure" class="crystalline_img" />
+	<img src="assets/img/crystalline_structure.webp" alt="crystalline structure" class="crystalline_img" />
 </div>
 
 <style lang="scss">

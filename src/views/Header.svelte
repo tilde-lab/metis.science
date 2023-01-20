@@ -16,10 +16,10 @@
 			</div>
 			{#if is_open}
 				<div class="opened_menu">
-					<li><a href="#">Intro</a></li>
-					<li><a href="#">Why Metis?</a></li>
-					<li><a href="#">Technical Details</a></li>
-					<li><a href="#">Download and Try</a></li>
+					<li><a href="#metis-features">Why Metis?</a></li>
+					<li><a href="#metis-backend">Software Details</a></li>
+					<li><a href="#metis-scientific">Scientific Details</a></li>
+					<li><a href="#metis-download">Download and Try</a></li>
 				</div>
 			{/if}
 		</div>

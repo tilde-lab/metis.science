@@ -1,4 +1,4 @@
-<div class="xray">
+<div class="xray" id="metis-scientific">
 	<Grid stack>
 		<Col col="6">
 			<div class="xray_box mb-6">
@@ -9,7 +9,7 @@
 					<span class="highlight2">codes</span> TOPAS and FullProf for phase identification and Rietveld analysis.
 				</div>
 			</div>
-			<img src="assets/img/xray.jpg" alt="xray" class="xray_img" />
+			<img src="assets/img/xray.webp" alt="xray" class="xray_img" />
 		</Col>
 		<Col col="6">
 			<div class="xray_detail">

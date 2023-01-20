@@ -1,4 +1,4 @@
-<div class="backend">
+<div class="backend" id="metis-backend">
 	<Grid stack>
 		<Col col="10">
 			<div class="backend_title">scientific backend</div>
@@ -8,7 +8,7 @@
 			</div>
 		</Col>
 		<Col col="2">
-			<img class="backend_code_img" src="assets/img/code.jpg" alt="code" />
+			<img class="backend_code_img" src="assets/img/code.webp" alt="code" />
 		</Col>
 	</Grid>
 	<Grid stack>

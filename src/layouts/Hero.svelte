@@ -10,13 +10,13 @@
 				</div>
 			</Col>
 			<Col col="5">
-				<img src="assets/img/hero.jpg" alt="img" />
+				<img src="assets/img/hero.webp" alt="img" />
 			</Col>
 		</Grid>
 	{:else}
 		<Grid stack>
 			<Col col="12">
-				<img src="assets/img/hero.jpg" alt="img" />
+				<img src="assets/img/hero.webp" alt="img" />
 			</Col>
 			<Col col="12">
 				<div class="hero_content">
