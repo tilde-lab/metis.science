@@ -9,7 +9,7 @@
 		<span class="highlight">wisdom.</span>
 	</div>
 	<div class="about_plot">
-		<img src="assets/img/grid.png" alt="vector image" />
+		<img src="assets/img/grid.png" alt="vector drawing" />
 	</div>
 </div>
 

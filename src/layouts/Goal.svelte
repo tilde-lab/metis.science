@@ -11,7 +11,7 @@
 						<h1>{item.text}</h1>
 						{#if active_tab == index}
 							<!-- svelte-ignore a11y-img-redundant-alt -->
-							<img src={item.img} alt="image" />
+							<img src={item.img} alt="Metis GUI" />
 						{/if}
 					</li>
 				{/each}
@@ -25,10 +25,10 @@
 	import { Grid, Col } from 'svelte-spectre';
 
 	const menus = [
-		{ text: `cheap on-demand cloud simulations`, img: 'assets/img/cloud-runs.png' },
-		{ text: `digesting the experiments data`, img: 'assets/img/all-data.png' },
-		{ text: `analyzing and comparing the data`, img: 'assets/img/optimade-search.png' },
-		{ text: `exporting and sharing the data across your lab`, img: 'assets/img/content-organizer.png' },
+		{ text: `cheap on-demand cloud simulations`, img: 'assets/img/screenshots/cloud-runs.png' },
+		{ text: `digesting the experiments data`, img: 'assets/img/screenshots/all-data.png' },
+		{ text: `getting the data from various sources`, img: 'assets/img/screenshots/optimade-search.png' },
+		{ text: `exporting and sharing the data across your lab`, img: 'assets/img/screenshots/content-organizer.png' },
 	];
 
 	let active_tab = 0;
@@ -82,10 +82,10 @@
 		left: 0;
 		bottom: 0;
 		width: 46%;
-		height: 509px;
+		height: 520px;
 		z-index: 1;
 		transition: all 0.3s ease-in-out;
-		opacity: 0.9;
+		box-shadow: 50px -50px 0 0 #5755d9;
 	}
 	.goal_bottom_text {
 		margin-left: 77px;
