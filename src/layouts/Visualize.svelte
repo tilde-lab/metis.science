@@ -1,7 +1,11 @@
 <div class="visualize">
 	<Grid stack>
 		<Col col="5">
-			<img src="assets/img/frost.jpg" alt="frost" />
+			<Slidy {slides} {index} let:item snap="center" axis="y" --slidy-slide-width="100%" loop={true} navigation={false} arrows={false} counter={false} autoplay={true}>
+				<figure>
+					<img width={item.width} height={item.height} src={item.src} alt="Stable Diffusion Neural Art" title="Stable Diffusion Neural Art" />
+				</figure>
+			</Slidy>
 		</Col>
 		<Col col="7">
 			<div class="visualize_text">
@@ -28,17 +32,30 @@
 
 <script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
+	import { Slidy, type Slide } from '@slidy/svelte';
 	import { Logo } from '@/components/index';
+
+	const slides: Slide[] = [
+		{ src: 'assets/img/stable_diffusion/db1dcbd0-440f-46c5-aa91-fc0e60d8d265.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/ce62dfd6-6735-43bc-9e57-214f3fd8a6e5.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/c98769d8-ba7a-4ce9-bf48-f9109868bddb.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/266f65d5-7d12-4642-8cc2-0cd16e925367.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/4aa1edac-bc4b-4e06-9183-ff10cad4fedc.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/2a4d23ad-5470-4f59-8dbe-a869ef5df317.webp', width: 450, height: 800 },
+	];
+	let index: number = Math.floor(Math.random() * slides.length);
 </script>
 
 <style lang="scss">
+	@import '@slidy/svelte/dist/slidy.css';
+
 	.visualize {
 		position: relative;
 	}
-	.visualize img {
+	.visualize figure img {
 		width: 100%;
-		height: 685px;
-		object-fit: cover;
+		margin-top: 50px;
+		box-shadow: 50px -50px 0 0 #5755d9;
 	}
 	.visualize_text {
 		position: relative;
