@@ -1,7 +1,19 @@
 <div class="visualize">
 	<Grid stack>
 		<Col col="5">
-			<Slidy {slides} {index} let:item snap="center" axis="y" --slidy-slide-width="100%" loop={true} navigation={false} arrows={false} counter={false} autoplay={true}>
+			<Slidy
+				{slides}
+				{index}
+				let:item
+				snap="center"
+				axis="y"
+				--slidy-slide-width="100%"
+				loop={true}
+				navigation={false}
+				arrows={false}
+				counter={false}
+				autoplay={true}
+			>
 				<figure>
 					<img width={item.width} height={item.height} src={item.src} alt="Stable Diffusion Neural Art" title="Stable Diffusion Neural Art" />
 				</figure>

@@ -56,10 +56,10 @@ body,
 	font-family: Exo2 !important;
 }
 
-.codejar-wrap code[class*=language-],
-.codejar-wrap pre[class*=language-] {
-	color: #25292E !important;
-	background: #FFFFFF !important;
+.codejar-wrap code[class*='language-'],
+.codejar-wrap pre[class*='language-'] {
+	color: #25292e !important;
+	background: #ffffff !important;
 	font-size: 24px !important;
 	line-height: 1.5 !important;
 	text-shadow: none !important;

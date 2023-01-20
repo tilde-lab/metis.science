@@ -3,7 +3,19 @@
 		All these operations can be also done programmatically via the <a href="https://github.com/tilde-lab/metis-client">Metis API</a>.
 	</div>
 	<div class="api_body">
-		<Slidy {slides} {index} let:item snap="center" axis="y" --slidy-slide-gap="7%" loop={true} navigation={false} arrows={false} counter={false} autoplay={true}>
+		<Slidy
+			{slides}
+			{index}
+			let:item
+			snap="center"
+			axis="y"
+			--slidy-slide-gap="7%"
+			loop={true}
+			navigation={false}
+			arrows={false}
+			counter={false}
+			autoplay={true}
+		>
 			<figure>
 				<img width={item.width} height={item.height} src={item.src} alt="Stable Diffusion Neural Art" title="Stable Diffusion Neural Art" />
 			</figure>
