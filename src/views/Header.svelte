@@ -134,6 +134,7 @@
 			align-items: center;
 			margin-top: 20px;
 			margin-left: 36px;
+			color: $dark-color;
 		}
 		.menu_holder {
 			margin-right: 36px;
@@ -143,7 +144,7 @@
 		.opened_menu {
 			background-color: #fff;
 			margin-top: 8px;
-			height: 500px;
+			height: 485px;
 			right: 0px;
 			padding-right: 40px;
 		}
