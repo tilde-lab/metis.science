@@ -27,7 +27,7 @@
 </header>
 
 <script lang="ts" context="module">
-	import { Navbar, Icon } from 'svelte-spectre';
+	import { Navbar } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
 </script>
 

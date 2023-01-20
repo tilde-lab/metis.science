@@ -1,6 +1,6 @@
 <div class="crystalline">
 	<div class="pots">
-		<img src="assets/img/grid.png" alt="vector image" />
+		<img src="assets/img/grid.png" alt="vector drawing" />
 	</div>
 	<div class="title">crystalline structures</div>
 	<div class="content">

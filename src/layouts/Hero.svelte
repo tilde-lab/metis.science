@@ -112,8 +112,5 @@
 		.hero_component h1 {
 			font-size: 48px;
 		}
-		.hero_component button {
-			width: 100%;
-		}
 	}
 </style>
