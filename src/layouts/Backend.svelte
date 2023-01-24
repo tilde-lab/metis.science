@@ -1,18 +1,31 @@
 <div class="backend" id="metis-backend">
 	<Grid stack>
-		<Col col="10">
-			<div class="backend_title">scientific backend</div>
-			<div class="backend_text">
-				The scientific backend is written in Python and able to manage complex multi-level simulation workflows via the AiiDA workflow manager. It
-				orchestrates scientific codes TOPAS, FullProf, VASP, Quantum Espresso, CRYSTAL, etc. in the clouds of well-known commodity providers.
-			</div>
-		</Col>
-		<Col col="2">
-			<img class="backend_code_img" src="assets/img/code.webp" alt="code" />
-		</Col>
+		{#if !$media.sm}
+			<Col col="10">
+				<div class="backend_title">scientific backend</div>
+				<div class="backend_text">
+					The scientific backend is written in Python and able to manage complex multi-level simulation workflows via the AiiDA workflow manager. It
+					orchestrates scientific codes TOPAS, FullProf, VASP, Quantum Espresso, CRYSTAL, etc. in the clouds of well-known commodity providers.
+				</div>
+			</Col>
+			<Col col="2">
+				<img class="backend_code_img" src="assets/img/code.webp" alt="code" />
+			</Col>
+		{:else}
+			<Col col="12">
+				<img class="backend_code_img" src="assets/img/code.webp" alt="code" />
+			</Col>
+			<Col col="12">
+				<div class="backend_title">scientific backend</div>
+				<div class="backend_text">
+					The scientific backend is written in Python and able to manage complex multi-level simulation workflows via the AiiDA workflow manager. It
+					orchestrates scientific codes TOPAS, FullProf, VASP, Quantum Espresso, CRYSTAL, etc. in the clouds of well-known commodity providers.
+				</div>
+			</Col>
+		{/if}
 	</Grid>
 	<Grid stack>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<div class="backend_techs">
 				<div class="backend_row">
 					<img src="assets/img/backend/tech1.svg" alt="tech_stack" />
@@ -28,7 +41,7 @@
 				</div>
 			</div>
 		</Col>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<div class="backend_bottom">
 				<div class="backend_description">
 					The scientific backend supports Microsoft Azure, Hetzner, Upcloud, and Google Cloud. All the scientific logic is encapsulated here. Download
@@ -42,6 +55,7 @@
 
 <script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
+	import { media } from '@/stores/media';
 </script>
 
 <style lang="scss">
@@ -82,6 +96,7 @@
 		padding: 54px 0 54px 50px;
 		justify-content: flex-end;
 		border-bottom: 1px solid #adadad;
+		height: 150px;
 	}
 	.backend_row img + img {
 		margin-left: 72px;
@@ -103,5 +118,87 @@
 		margin-bottom: 60px;
 		font-size: 28px;
 		line-height: 136%;
+	}
+	@media (max-width: 1770px) {
+		.backend_text {
+			width: 94%;
+		}
+	}
+	@media (max-width: 1440px) {
+		.backend_techs {
+			margin-right: 20px;
+		}
+		.backend_row img + img {
+			margin-left: 20px;
+		}
+		.backend_row:nth-child(2) img {
+			width: 50%;
+			height: 100%;
+		}
+		.backend_row:last-child {
+			justify-content: flex-end;
+		}
+		.backend_row:nth-child(3) img {
+			width: 50%;
+			height: 100%;
+		}
+	}
+	@media (max-width: 1160px) {
+		.backend_text {
+			margin-top: 10px;
+			text-indent: 180px;
+			font-size: 24px;
+			width: 80%;
+		}
+		.backend_code_img {
+			right: -400px;
+		}
+	}
+	@media (max-width: 1024px) {
+		.backend_row:nth-child(2) img {
+			width: 50%;
+			height: 80%;
+		}
+		.backend_row:nth-child(3) img {
+			width: 50%;
+			height: 80%;
+		}
+		.backend_bottom {
+			margin-left: 40px;
+		}
+	}
+	@media (max-width: 620px) {
+		.backend {
+			padding-top: 0px;
+		}
+		.backend_code_img {
+			position: relative;
+			top: 0;
+			right: -300px;
+			height: 354px;
+			width: auto;
+			object-fit: contain;
+			z-index: 1;
+		}
+		.backend_title {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin-top: 40px;
+		}
+		.backend_text {
+			margin-top: 10px;
+			text-indent: 0;
+			width: 100%;
+		}
+		.backend_techs {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+		.backend_bottom {
+			margin-top: 30px;
+			margin-left: -20px;
+			margin-right: -20px;
+		}
 	}
 </style>

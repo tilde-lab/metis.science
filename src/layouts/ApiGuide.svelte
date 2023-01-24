@@ -62,4 +62,17 @@
 	.api_body img {
 		border: 20px solid #5755d9;
 	}
+	@media (max-width: 1024px) {
+		.api_header {
+			font-size: 24px;
+		}
+	}
+	@media (max-width: 620px) {
+		.api_header {
+			font-size: 18px;
+		}
+		.api_body {
+			padding-top: 40px;
+		}
+	}
 </style>

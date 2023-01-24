@@ -84,3 +84,13 @@ body,
 .spectre .menu:not(.menu-nav) {
 	box-shadow: none !important;
 }
+
+@media (max-width: 620px) {
+	.column.col-12 {
+		width: 100%;
+	}
+
+	.backend button {
+		width: 100%;
+	}
+}

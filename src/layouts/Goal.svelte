@@ -39,7 +39,6 @@
 
 	const activeTab = (index) => {
 		active_tab = index;
-		//console.log(active_tab);
 	};
 </script>
 
