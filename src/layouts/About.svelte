@@ -169,6 +169,7 @@
 			right: 0;
 			width: 100%;
 			margin-bottom: 80px;
+			line-height: 140%;
 		}
 		.about_plot {
 			width: 300px;
