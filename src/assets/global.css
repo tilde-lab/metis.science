@@ -77,20 +77,45 @@ body,
 	color: #999 !important;
 }
 
+.codejar-wrap .token.operator {
+	color: #999 !important;
+}
+
 /* .codejar-wrap .token.property, .codejar-wrap .token.selector {
     color: #25292E!important
 } */
 
-.spectre .menu:not(.menu-nav) {
-	box-shadow: none !important;
+@media (max-width: 1292px) {
+	.codejar-linenumbers {
+		font-size: 18px !important;
+	}
+
+	.codejar-wrap code[class*='language-'],
+	.codejar-wrap pre[class*='language-'] {
+		font-size: 18px !important;
+	}
 }
 
 @media (max-width: 620px) {
+	.codejar-wrap {
+		margin-top: 60px;
+	}
+
 	.column.col-12 {
 		width: 100%;
 	}
 
 	.backend button {
 		width: 100%;
+	}
+}
+
+.spectre .menu:not(.menu-nav) {
+	box-shadow: none !important;
+}
+
+@media (max-width: 425px) {
+	footer .form-switch i {
+		margin-top: 10px !important
 	}
 }

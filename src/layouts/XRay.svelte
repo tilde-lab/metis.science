@@ -1,17 +1,23 @@
 <div class="xray" id="metis-scientific">
 	<Grid stack>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<div class="xray_box mb-6">
 				<div class="title">x-ray powder diffraction (XRPD)</div>
 				<div class="content">
 					Metis
-					<span class="highlight1">supports scientific</span>
-					<span class="highlight2">codes</span> TOPAS and FullProf for phase identification and Rietveld analysis.
+					{#if !$media.lg}
+						<span class="highlight1">supports scientific</span>
+						<span class="highlight2">codes</span>
+					{:else}
+						<span class="highlight1">supports </span><br />
+						<span class="highlight2">scientific codes</span>
+					{/if}
+					TOPAS and FullProf for phase identification and Rietveld analysis.
 				</div>
 			</div>
 			<img src="assets/img/xray.webp" alt="xray" class="xray_img" />
 		</Col>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<div class="xray_detail">
 				<div class="content">All crystallographic formats and raw diffractometer data formats are recognized.</div>
 				<div class="xray_detail_row">
@@ -39,7 +45,7 @@
 					</div>
 				</div>
 				<div class="title">ab initio <span class="highlight1">first-principles</span> modeling</div>
-				<div class="content">
+				<div class="content mb-100">
 					Metis supports scientific codes VASP, Quantum Espresso, and CRYSTAL to model the electronic structure of materials and to predict a wide
 					range of physical properties, based on the only crystalline structure provided.
 				</div>
@@ -50,6 +56,7 @@
 
 <script lang="ts" context="module">
 	import { Grid, Col } from 'svelte-spectre';
+	import { media } from '@/stores/media';
 </script>
 
 <style lang="scss">
@@ -145,6 +152,123 @@
 	@media (max-width: 1650px) {
 		.xray .xray_img {
 			width: 45%;
+		}
+	}
+	@media (max-width: 1810px) {
+		.xray_box .content {
+			font-size: 48px;
+			line-height: 136%;
+		}
+
+		.xray_box span.highlight2 {
+			padding-top: 20px;
+		}
+
+		.xray_detail .content {
+			font-size: 42px;
+		}
+		.xray_detail_row .content {
+			font-size: 38px;
+		}
+	}
+	@media (max-width: 1440px) {
+		.xray_box .content {
+			font-size: 38px;
+		}
+		.xray_detail .xray_detail_row span.sign {
+			font-size: 42px;
+		}
+		.xray_detail .xray_detail_row span.techs {
+			font-size: 24px;
+		}
+	}
+	@media (max-width: 1134px) {
+		.xray_box .content {
+			font-size: 32px;
+		}
+
+		.xray_box span.highlight2 {
+			padding-top: 20px;
+		}
+
+		.xray_detail .content {
+			font-size: 28px;
+		}
+		.xray_detail_row .content {
+			font-size: 24px;
+		}
+	}
+	@media (max-width: 1024px) {
+		.xray .xray_img {
+			height: 620px;
+		}
+		.xray_detail .xray_detail_row span.sign {
+			font-size: 38px;
+		}
+		.xray_detail .xray_detail_row span.techs {
+			font-size: 18px;
+		}
+		.xray_box .content {
+			font-size: 28px;
+			line-height: 160%;
+		}
+		.xray_detail .content {
+			font-size: 22px;
+			margin-bottom: 60px;
+		}
+		.xray_detail .title {
+			margin-top: 60px;
+		}
+		.xray_detail .xray_detail_row {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.xray_detail_row .content {
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 920px) {
+		.xray_box .content {
+			font-size: 26px;
+		}
+		.xray_detail .xray_detail_row span.sign {
+			font-size: 32px;
+		}
+		.xray_detail .xray_detail_row span.techs {
+			font-size: 14px;
+		}
+		.xray_detail .xray_detail_row span {
+			margin-right: 20px;
+		}
+	}
+	@media (max-width: 630px) {
+		.xray_box {
+			padding: 160px 40px 0;
+		}
+	}
+	@media (max-width: 620px) {
+		.xray {
+			position: relative;
+		}
+		.xray .xray_img {
+			bottom: -100px;
+			width: 100%;
+			z-index: 999999;
+		}
+		.xray_box .content {
+			font-size: 36px;
+		}
+		.xray_detail {
+			padding-top: 40px;
+		}
+		.xray_detail .xray_detail_row span.sign {
+			font-size: 42px;
+		}
+		.xray_detail .xray_detail_row span.techs {
+			font-size: 20px;
+		}
+		.xray_detail .content.mb-100 {
+			margin-bottom: 580px;
 		}
 	}
 </style>

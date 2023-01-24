@@ -200,5 +200,8 @@
 			margin-left: -20px;
 			margin-right: -20px;
 		}
+		.backend_description {
+			font-size: 22px;
+		}
 	}
 </style>
