@@ -1,5 +1,5 @@
 <span {id} style:--width={size}>
-	<Icon size="4x" {color}>
+	<Icon size={!$media.sm ? '4x' : '2x'} {color}>
 		{@html MetisLogo}
 	</Icon>
 </span>
@@ -7,6 +7,7 @@
 <script lang="ts" context="module">
 	import { Icon } from 'svelte-spectre';
 	import MetisLogo from '@/assets/img/metis.svg';
+	import { media } from '@/stores/media';
 </script>
 
 <script lang="ts">

@@ -1,21 +1,41 @@
 <div class="flow">
-	<div class="flow_wrapper">
-		<div class="flow_item">
-			<span class="sign">#</span>
-			<span>Digital materials lab assistant</span>
-		</div>
-		<div class="flow_item">
-			<span class="sign">#</span>
-			<span>Free open-source virtual materials environment</span>
-		</div>
-		<div class="flow_item">
-			<span class="sign">#</span>
-			<span>Highly-scalable cheap scientific simulations in the cloud</span>
-		</div>
-		<div class="flow_item">
-			<span class="sign">#</span>
-			<span>Modular reusable component-based system</span>
-		</div>
+	<div class="marquee">
+		<ul class="marquee__content">
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Digital materials lab assistant</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Free open-source virtual materials environment</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Highly-scalable cheap scientific simulations in the cloud</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Modular reusable component-based system</span>
+			</div>
+		</ul>
+		<ul aria-hidden="true" class="marquee__content">
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Digital materials lab assistant</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Free open-source virtual materials environment</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Highly-scalable cheap scientific simulations in the cloud</span>
+			</div>
+			<div class="flow_item">
+				<span class="sign">#</span>
+				<span>Modular reusable component-based system</span>
+			</div>
+		</ul>
 	</div>
 </div>
 
@@ -30,31 +50,40 @@
 		margin-top: -8px;
 		display: flex;
 	}
-	.flow_wrapper {
-		height: 100%;
-		width: 200vw;
+	.flow ul {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.marquee {
+		--gap: 13rem;
+		position: relative;
 		display: flex;
-		animation: running-anim 10s forwards infinite linear;
-		@keyframes running-anim {
-			from {
-				transform: translateX(0);
-			}
-			to {
-				transform: translateX(-39.5vw);
-			}
+		overflow: hidden;
+		user-select: none;
+		gap: 0 var(--gap);
+	}
+
+	.marquee__content {
+		flex-shrink: 0;
+		display: flex;
+		gap: 0 var(--gap);
+		min-width: max-content;
+		animation: scroll 20s linear infinite;
+	}
+
+	@keyframes scroll {
+		from {
+			transform: translateX(0);
 		}
-		@media (max-width: 1016px) {
-			width: 300vw;
+		to {
+			transform: translateX(calc(-100% - var(--gap)));
 		}
 	}
+
 	.flow_item {
 		display: flex;
 		align-items: center;
-		margin-right: 180px;
 		width: max-content;
-		@media (max-width: 1556px) {
-			margin-right: 40px;
-		}
 	}
 	.flow_item span {
 		font-size: 28px;
@@ -71,13 +100,21 @@
 		}
 	}
 
-	@media (max-width: 676px) {
+	@media (max-width: 620px) {
 		.flow {
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 25px;
+			padding-bottom: 25px;
 		}
-		.flow_wrapper {
-			width: 500vw;
+		.flow_item span {
+			font-size: 18px;
+		}
+		.marquee__content {
+			gap: 0 5rem;
+		}
+	}
+	@media (max-width: 475px) {
+		.flow_item span {
+			font-size: 14px;
 		}
 	}
 </style>
