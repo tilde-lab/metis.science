@@ -152,7 +152,7 @@
 		}
 		footer .theme_switch {
 			margin-left: 4px;
-			margin-top: 560px;
+			margin-top: 550px;
 		}
 	}
 </style>
