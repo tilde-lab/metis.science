@@ -1,12 +1,17 @@
 <div class="open_source">
 	<img src="assets/img/dots.png" alt="dots" />
 	<Grid stack>
-		<Col col="9">
-			<span class="highlight">Metis is free and fully open source.</span>
+		<Col col={!$media.md ? '9' : '12'}>
+			{#if !$media.sm}
+				<span class="highlight">Metis is free and fully open source.</span>
+			{:else}
+				<span class="highlight">Metis is free and fully</span><br />
+				<span class="highlight">open source.</span>
+			{/if}
 			<h1 class="text-black">We advocate this code for our partner organizations, synchrotrons, XRPD, and materials science community in general.</h1>
 		</Col>
 		<div class="p-centered">
-			<Col col="3">
+			<Col col={!$media.md ? '3' : '12'}>
 				<Button variant="secondary" size="xl">Download now</Button>
 			</Col>
 		</div>
@@ -15,6 +20,7 @@
 
 <script lang="ts" context="module">
 	import { Grid, Col, Button } from 'svelte-spectre';
+	import { media } from '@/stores/media';
 </script>
 
 <style lang="scss">
@@ -54,5 +60,45 @@
 		padding: 0 20px;
 		padding-top: 10px;
 		margin-left: -20px;
+	}
+	@media (max-width: 1590px) {
+		.open_source span,
+		.open_source h1 {
+			font-size: 42px;
+		}
+	}
+	@media (max-width: 1048px) {
+		.open_source span,
+		.open_source h1 {
+			font-size: 28px;
+		}
+	}
+	@media (max-width: 840px) {
+		.open_source {
+			padding: 160px 20px;
+		}
+		.open_source span,
+		.open_source h1 {
+			font-size: 32px;
+		}
+		.open_source .p-centered {
+			margin-top: 30px;
+		}
+	}
+	@media (max-width: 620px) {
+		.open_source {
+			padding: 80px 20px;
+		}
+		.open_source img {
+			position: absolute;
+			z-index: -1;
+			top: -69px;
+			left: 0;
+			height: 100px;
+			width: 250px;
+		}
+		span.highlight {
+			line-height: 136%;
+		}
 	}
 </style>

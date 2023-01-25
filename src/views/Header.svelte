@@ -1,7 +1,7 @@
 <header class="p-1">
 	<Navbar>
 		<div slot="left" class="brand">
-			<Logo size="5em" />
+			<Logo size={!$media.sm ? '5em' : '3em'} />
 			<span>Metis</span>
 		</div>
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -29,6 +29,7 @@
 <script lang="ts" context="module">
 	import { Navbar } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
+	import { media } from '@/stores/media';
 </script>
 
 <script lang="ts">
@@ -93,10 +94,10 @@
 		transition: transform 0.3s ease-in-out;
 	}
 	.cross::before {
-		transform: translateY(8px) rotate(-148deg);
+		transform: translateY(5px) rotate(-148deg);
 	}
 	.cross::after {
-		transform: translateY(-8px) rotate(148deg);
+		transform: translateY(-5px) rotate(148deg);
 	}
 	.opened_menu {
 		position: absolute;
@@ -128,17 +129,21 @@
 			width: 100%;
 			z-index: 9999999;
 			background-color: #fff;
+			height: 52px;
 		}
 		.brand {
 			display: flex;
 			align-items: center;
-			margin-top: 20px;
-			margin-left: 36px;
+			margin-top: 8px;
+			margin-left: 15px;
 			color: $dark-color;
 		}
+		span {
+			font-size: 22px;
+		}
 		.menu_holder {
-			margin-right: 36px;
-			margin-top: 20px;
+			margin-right: 17px;
+			margin-top: 11px;
 			color: $primary-color;
 		}
 		.opened_menu {
@@ -153,14 +158,24 @@
 		}
 		.burger,
 		.cross {
-			width: 38px;
-			height: 18px;
+			width: 30px;
+			height: 12px;
 		}
 		.burger:after,
 		.burger:before,
 		.cross::after,
 		.cross::before {
 			background: $primary-color;
+			height: 2px;
+		}
+	}
+	@media (max-width: 425px) {
+		.opened_menu {
+			height: 330px;
+			width: 240px;
+			li {
+				font-size: 18px;
+			}
 		}
 	}
 </style>

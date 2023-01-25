@@ -92,29 +92,95 @@
 		.about_content {
 			width: 100%;
 		}
+	}
+	@media (max-width: 620px) {
+		.about {
+			padding: 0;
+			padding-top: 48px;
+		}
+		.about_title {
+			position: absolute;
+			height: 19px;
+			left: 15px;
+			top: 48px;
+			font-size: 18px;
+		}
+		.about_content {
+			position: relative;
+			font-size: 24px;
+			margin-top: 43px;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-indent: 0px;
+			line-height: 136%;
+		}
 		.about_bottom {
-			width: 90%;
-			left: 20px;
-			right: 20px;
+			position: relative;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 60px;
+			font-size: 18px;
+			top: 0;
+			right: 0;
+			width: 100%;
+			margin-bottom: 80px;
+			line-height: 120%;
 		}
-	}
-	@media (max-width: 664px) {
-		.star_highlight {
-			display: flex;
-			max-inline-size: fit-content;
-		}
-	}
-	@media (max-width: 768px) {
 		.about_plot {
-			right: -500px;
+			width: 300px;
+			height: 100px;
+			top: 30px;
+			position: absolute;
+			right: -150px;
 		}
-		.about_bottom {
-			line-height: 1.3;
+		.about_plot img {
+			width: 500px;
+			height: 280px;
 		}
 	}
-	@media (max-width: 572px) {
-		.star_highlight {
-			display: initial;
+	@media (max-width: 425px) {
+		.about {
+			padding: 0;
+			padding-top: 48px;
+		}
+		.about_title {
+			position: absolute;
+			height: 19px;
+			left: 15px;
+			top: 48px;
+			font-size: 14px;
+		}
+		.about_content {
+			position: relative;
+			font-size: 22px;
+			margin-top: 43px;
+			padding-left: 15px;
+			padding-right: 15px;
+			text-indent: 0px;
+			line-height: 136%;
+		}
+		.about_bottom {
+			position: relative;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 60px;
+			font-size: 18px;
+			top: 0;
+			right: 0;
+			width: 100%;
+			margin-bottom: 80px;
+			line-height: 140%;
+		}
+		.about_plot {
+			width: 300px;
+			height: 100px;
+			top: 50px;
+			position: absolute;
+			right: -100px;
+		}
+		.about_plot img {
+			width: 500px;
+			height: 280px;
 		}
 	}
 </style>

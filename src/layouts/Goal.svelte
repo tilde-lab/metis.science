@@ -1,19 +1,19 @@
 <div class="goal" id="metis-features">
 	<Grid stack>
-		<Col col="6">
+		<Col col={!$media.lg ? '6' : '12'}>
 			<h1>Metis provides the rich web-based graphical user interface (GUI) for</h1>
 		</Col>
-		<Col col="6">
+		<Col col={!$media.lg ? '6' : '12'}>
 			<ul class="mb-9">
 				{#each menus as item, index}
 					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<li class="menu {active_tab == index && 'active'}" on:click={() => activeTab(index)}>
 						<h1>{item.text}</h1>
-						{#if active_tab == index}
-							<!-- svelte-ignore a11y-img-redundant-alt -->
-							<img src={item.img} alt="Metis GUI" />
-						{/if}
 					</li>
+					{#if active_tab == index}
+						<!-- svelte-ignore a11y-img-redundant-alt -->
+						<img src={item.img} alt="Metis GUI" />
+					{/if}
 				{/each}
 			</ul>
 			<h2 class="goal_bottom_text">The new simulation codes and parameter optimization methods can be easily added.</h2>
@@ -21,8 +21,12 @@
 	</Grid>
 </div>
 
-<script lang="ts">
+<script lang="ts" context="module">
 	import { Grid, Col } from 'svelte-spectre';
+</script>
+
+<script lang="ts">
+	import { media } from '@/stores/media';
 
 	const menus = [
 		{ text: `cheap on-demand cloud simulations`, img: 'assets/img/screenshots/cloud-runs.png' },
@@ -35,7 +39,6 @@
 
 	const activeTab = (index) => {
 		active_tab = index;
-		//console.log(active_tab);
 	};
 </script>
 
@@ -74,7 +77,7 @@
 	.goal .menu::before {
 		content: '(' counter(section, lower-roman) ') ';
 		font-size: 22px;
-		margin-right: 28px;
+		width: 52px;
 	}
 	.goal img {
 		position: absolute;
@@ -93,10 +96,54 @@
 		font-weight: 300;
 		width: 80%;
 	}
+	@media (max-width: 1750px) {
+		.goal h1 {
+			font-size: 38px;
+		}
+		.goal .menu h1 {
+			font-size: 28px;
+		}
+	}
 	@media (max-width: 1580px) {
 		.goal img {
 			width: 45%;
 			height: 409px;
+		}
+	}
+	@media (max-width: 1580px) {
+		.goal {
+			padding: 80px 0 80px 20px;
+		}
+		.goal h1 {
+			font-size: 28px;
+		}
+		.goal .menu h1 {
+			font-size: 22px;
+		}
+	}
+	@media (max-width: 960px) {
+		.goal img {
+			position: relative;
+			width: 100%;
+			height: 400px;
+			z-index: 1;
+			transition: all 0.3s ease-in-out;
+			box-shadow: none;
+			padding-left: 48px;
+		}
+	}
+	@media (max-width: 620px) {
+		.goal img {
+			height: 260px;
+		}
+		.goal h1 {
+			font-size: 22px;
+		}
+		.goal .menu h1 {
+			font-size: 18px;
+		}
+		.goal_bottom_text {
+			font-size: 18px;
 		}
 	}
 </style>

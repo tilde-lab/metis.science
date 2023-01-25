@@ -1,6 +1,6 @@
 <div class="bff">
 	<Grid stack>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<div class="bff_box">
 				<div class="bff_title">backend-for-frontend</div>
 				<div class="bff_content">
@@ -16,7 +16,7 @@
 				</div>
 			</div>
 		</Col>
-		<Col col="6">
+		<Col col={!$media.sm ? '6' : '12'}>
 			<CodeEditor {code} lang="js" loc {...$$restProps} />
 		</Col>
 	</Grid>
@@ -26,6 +26,7 @@
 	import { Grid, Col, Button } from 'svelte-spectre';
 	import { Logo } from '@/components/index';
 	import CodeEditor from 'svelte-code-editor';
+	import { media } from '@/stores/media';
 
 	let code = `/**
  * @api {post} /v0/calculations Submit a new calculation
@@ -87,5 +88,46 @@ async function post(req, res, next) {
 		object-fit: contain;
 		height: 40px;
 		margin-right: 70px;
+	}
+	@media (max-width: 1440px) {
+		.bff_content {
+			font-size: 28px;
+		}
+	}
+	@media (max-width: 1280px) {
+		.bff_content {
+			text-indent: 230px;
+		}
+		.bff_bottom {
+			width: 80%;
+			margin-right: 20px;
+		}
+	}
+	@media (max-width: 1024px) {
+		.bff_bottom_box {
+			align-items: center;
+			flex-direction: column;
+		}
+		.bff_bottom {
+			margin-bottom: 40px;
+		}
+	}
+	@media (max-width: 768px) {
+		.bff_bottom img {
+			margin-right: 10px;
+		}
+		.bff_content {
+			font-size: 24px;
+			padding-top: 6px;
+		}
+	}
+	@media (max-width: 425px) {
+		.bff_title {
+			position: relative;
+			margin-bottom: 20px;
+		}
+		.bff_content {
+			text-indent: 0;
+		}
 	}
 </style>

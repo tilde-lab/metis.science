@@ -100,7 +100,7 @@
 		}
 		.hero_component img {
 			height: 480px;
-			margin-top: 90px;
+			margin-top: 60px;
 		}
 		.hero_component .hero_content {
 			display: contents;
@@ -110,7 +110,16 @@
 			justify-content: center;
 		}
 		.hero_component h1 {
-			font-size: 48px;
+			font-size: 42px;
+		}
+	}
+	@media (max-width: 425px) {
+		.hero_component h1 {
+			font-size: 30px;
+		}
+		.hero_component img {
+			height: 320px;
+			margin-top: 60px;
 		}
 	}
 </style>

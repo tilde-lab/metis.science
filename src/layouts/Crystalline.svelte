@@ -61,4 +61,31 @@
 		bottom: 0;
 		left: 0;
 	}
+	@media (max-width: 1440px) {
+		.crystalline .content {
+			font-size: 32px;
+			padding-top: 6px;
+		}
+		.bottom_content {
+			font-size: 24px;
+		}
+	}
+	@media (max-width: 620px) {
+		.crystalline .title {
+			position: relative;
+			top: 0;
+			left: 0;
+			margin-bottom: 40px;
+			font-size: 14px;
+		}
+		.crystalline .content {
+			text-indent: 0px;
+			width: 100%;
+			font-size: 22px;
+		}
+		.bottom_content {
+			width: 100%;
+			font-size: 18px;
+		}
+	}
 </style>

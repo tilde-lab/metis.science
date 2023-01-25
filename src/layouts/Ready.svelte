@@ -53,4 +53,34 @@
 		font-size: 36px;
 		margin-bottom: 60px;
 	}
+	@media (max-width: 1200px) {
+		.ready_content {
+			padding: 200px 0 142px;
+		}
+		.ready_content h1 {
+			font-size: 80px;
+		}
+		.ready_content h1.detail {
+			font-size: 48px;
+		}
+	}
+	@media (max-width: 1200px) {
+		.ready_content h1 {
+			font-size: 60px;
+		}
+		.ready_content h1.detail {
+			font-size: 28px;
+		}
+	}
+	@media (max-width: 620px) {
+		.ready_content h1 {
+			font-size: 30px;
+		}
+		.ready_content h1.detail {
+			font-size: 18px;
+		}
+		.ready_content {
+			padding: 80px 0 72px;
+		}
+	}
 </style>

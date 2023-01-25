@@ -1,39 +1,72 @@
 <footer>
 	<Grid stack>
-		<Col col="3">
-			<div class="white_logo">
-				<Logo size="5em" color="light" />
-				<h1>Metis</h1>
-			</div>
-			<div class="theme_switch">
-				<Switch bind:value={$darkTheme}>Dark theme</Switch>
-			</div>
-		</Col>
-		<Col col="3">
-			<div class="footer_about">
-				<h1>About</h1>
-				<li><a href="#">Contacts</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Press Kit</a></li>
-			</div>
-		</Col>
-		<Col col="3">
-			<div class="footer_product">
-				<h1>Product</h1>
-				<li><a href="#metis-features">Why Metis?</a></li>
-				<li><a href="#metis-backend">Software Details</a></li>
-				<li><a href="#metis-scientific">Scientific Details</a></li>
-				<li><a href="https://kit.metis.science">User Interface Kit</a></li>
-			</div>
-		</Col>
-		<Col col="3">
-			<div class="footer_legal">
-				<h1>Transparency</h1>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="https://github.com/tilde-lab/metis.science">This site on GitHub</a></li>
-			</div>
-		</Col>
+		{#if !$media.sm}
+			<Col col={!$media.md ? '3' : '4'}>
+				<div class="white_logo">
+					<Logo size="5em" color="light" />
+					<h1>Metis</h1>
+				</div>
+				<div class="theme_switch">
+					<Switch bind:value={$darkTheme}>Dark theme</Switch>
+				</div>
+			</Col>
+			<Col col={!$media.md ? '3' : '2'}>
+				<div class="footer_about">
+					<h1>About</h1>
+					<li><a href="#">Contacts</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Press Kit</a></li>
+				</div>
+			</Col>
+			<Col col="3">
+				<div class="footer_product">
+					<h1>Product</h1>
+					<li><a href="#metis-features">Why Metis?</a></li>
+					<li><a href="#metis-backend">Software Details</a></li>
+					<li><a href="#metis-scientific">Scientific Details</a></li>
+					<li><a href="https://kit.metis.science">User Interface Kit</a></li>
+				</div>
+			</Col>
+			<Col col="3">
+				<div class="footer_legal">
+					<h1>Transparency</h1>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="https://github.com/tilde-lab/metis.science">This site on GitHub</a></li>
+				</div>
+			</Col>
+		{:else}
+			<Col col="8">
+				<div class="footer_about">
+					<h1>About</h1>
+					<li><a href="#">Contacts</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Press Kit</a></li>
+				</div>
+				<div class="footer_product">
+					<h1>Product</h1>
+					<li><a href="#metis-features">Why Metis?</a></li>
+					<li><a href="#metis-backend">Software Details</a></li>
+					<li><a href="#metis-scientific">Scientific Details</a></li>
+					<li><a href="https://kit.metis.science">User Interface Kit</a></li>
+				</div>
+				<div class="footer_legal">
+					<h1>Transparency</h1>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="https://github.com/tilde-lab/metis.science">This site on GitHub</a></li>
+				</div>
+			</Col>
+			<Col col="4">
+				<div class="white_logo">
+					<Logo size="3em" color="light" />
+					<h1>Metis</h1>
+				</div>
+				<div class="theme_switch">
+					<Switch bind:value={$darkTheme}>Dark theme</Switch>
+				</div>
+			</Col>
+		{/if}
 	</Grid>
 </footer>
 
@@ -44,6 +77,7 @@
 	import { nodeAttribute } from '@/helpers/dom';
 
 	import { darkTheme } from '@/stores/theme';
+	import { media } from '@/stores/media';
 </script>
 
 <script lang="ts">
@@ -98,4 +132,27 @@
 	// 		background-color: #f1f1fc;
 	// 	}
 	// }
+
+	@media (max-width: 1024px) {
+		footer {
+			h1 {
+				font-size: 24px;
+			}
+			li {
+				font-size: 16px;
+			}
+		}
+	}
+	@media (max-width: 620px) {
+		div:nth-child(1) {
+			margin-top: 0px;
+		}
+		div {
+			margin-top: 60px;
+		}
+		footer .theme_switch {
+			margin-left: 4px;
+			margin-top: 550px;
+		}
+	}
 </style>

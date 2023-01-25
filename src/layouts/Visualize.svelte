@@ -1,6 +1,6 @@
 <div class="visualize">
 	<Grid stack>
-		<Col col="5">
+		<Col col={!$media.sm ? '5' : '12'}>
 			<Slidy
 				{slides}
 				{index}
@@ -19,7 +19,7 @@
 				</figure>
 			</Slidy>
 		</Col>
-		<Col col="7">
+		<Col col={!$media.sm ? '7' : '12'}>
 			<div class="visualize_text">
 				<div class="visualize_box">
 					<div class="title">online GUI app</div>
@@ -46,14 +46,15 @@
 	import { Grid, Col, Button } from 'svelte-spectre';
 	import { Slidy, type Slide } from '@slidy/svelte';
 	import { Logo } from '@/components/index';
+	import { media } from '@/stores/media';
 
 	const slides: Slide[] = [
-		{ src: 'assets/img/stable_diffusion/db1dcbd0-440f-46c5-aa91-fc0e60d8d265.webp', width: 450, height: 800 },
-		{ src: 'assets/img/stable_diffusion/ce62dfd6-6735-43bc-9e57-214f3fd8a6e5.webp', width: 450, height: 800 },
-		{ src: 'assets/img/stable_diffusion/c98769d8-ba7a-4ce9-bf48-f9109868bddb.webp', width: 450, height: 800 },
-		{ src: 'assets/img/stable_diffusion/266f65d5-7d12-4642-8cc2-0cd16e925367.webp', width: 450, height: 800 },
-		{ src: 'assets/img/stable_diffusion/4aa1edac-bc4b-4e06-9183-ff10cad4fedc.webp', width: 450, height: 800 },
-		{ src: 'assets/img/stable_diffusion/2a4d23ad-5470-4f59-8dbe-a869ef5df317.webp', width: 450, height: 800 },
+		{ src: 'assets/img/stable_diffusion/db1dcbd0-440f-46c5-aa91-fc0e60d8d265.webp', width: 420, height: 800 },
+		{ src: 'assets/img/stable_diffusion/ce62dfd6-6735-43bc-9e57-214f3fd8a6e5.webp', width: 420, height: 800 },
+		{ src: 'assets/img/stable_diffusion/c98769d8-ba7a-4ce9-bf48-f9109868bddb.webp', width: 420, height: 800 },
+		{ src: 'assets/img/stable_diffusion/266f65d5-7d12-4642-8cc2-0cd16e925367.webp', width: 420, height: 800 },
+		{ src: 'assets/img/stable_diffusion/4aa1edac-bc4b-4e06-9183-ff10cad4fedc.webp', width: 420, height: 800 },
+		{ src: 'assets/img/stable_diffusion/2a4d23ad-5470-4f59-8dbe-a869ef5df317.webp', width: 420, height: 800 },
 	];
 	let index: number = Math.floor(Math.random() * slides.length);
 </script>
@@ -126,5 +127,38 @@
 		left: 0;
 		height: 169px;
 		width: 351px;
+	}
+	@media (max-width: 1264px) {
+		.visualize_bottom {
+			width: 80%;
+			margin-right: 20px;
+		}
+		.visualize_text .context {
+			text-indent: 140px;
+			font-size: 28px;
+		}
+	}
+	@media (max-width: 1024px) {
+		.visualize_text {
+			padding-left: 60px;
+			padding-right: 40px;
+		}
+		.visualize_bottom_box {
+			align-items: center;
+			flex-direction: column;
+		}
+		.visualize_bottom {
+			margin-bottom: 40px;
+		}
+	}
+	@media (max-width: 425px) {
+		.visualize_box .title {
+			position: relative;
+			top: 0;
+			margin-bottom: 20px;
+		}
+		.visualize_box .context {
+			text-indent: 0px;
+		}
 	}
 </style>
