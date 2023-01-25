@@ -18,7 +18,7 @@
 					<li><a href="#">Press Kit</a></li>
 				</div>
 			</Col>
-			<Col col={!$media.md ? '3' : '3'}>
+			<Col col="3">
 				<div class="footer_product">
 					<h1>Product</h1>
 					<li><a href="#metis-features">Why Metis?</a></li>
@@ -27,7 +27,7 @@
 					<li><a href="https://kit.metis.science">User Interface Kit</a></li>
 				</div>
 			</Col>
-			<Col col={!$media.md ? '3' : '3'}>
+			<Col col="3">
 				<div class="footer_legal">
 					<h1>Transparency</h1>
 					<li><a href="#">Terms</a></li>
